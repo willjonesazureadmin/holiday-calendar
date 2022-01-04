@@ -13,6 +13,7 @@ using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Azure.Storage.Blobs;
+using Microsoft.Extensions.Configuration;
 
 namespace api
 {
@@ -22,10 +23,16 @@ namespace api
     {
         private readonly BlobServiceClient _blobServiceClient;
         private readonly ReadWriteContext _readwritecontext;
-        public holiday_calendar_api(ReadWriteContext readwritecontext, BlobServiceClient blobServiceClient)
+
+        private BlobContainerClient _containerClient;
+
+
+        public holiday_calendar_api(ReadWriteContext readwritecontext, BlobServiceClient blobServiceClient, IConfiguration configuration)
         {
             this._readwritecontext = readwritecontext;
             this._blobServiceClient = blobServiceClient;
+            this._containerClient =  this._blobServiceClient.GetBlobContainerClient("images");
+
         }
 
         [FunctionName("holiday_calendar_add")]
@@ -81,12 +88,17 @@ namespace api
                 var ce = await _readwritecontext.CalendarEntry.FirstOrDefaultAsync(a => a.Id == id);
                 if(ce.Id != null)
                 {
-                    _blobServiceClient.
+                    
+                    BlobClient blobClient = _containerClient.GetBlobClient(file.FileName);
+                    await blobClient.UploadAsync(file.OpenReadStream());
+
+                    ce.UpdateImageUrl(blobClient.Uri.AbsoluteUri);
+                    _readwritecontext.Update(ce);
+                    _readwritecontext.SaveChanges();
                 }
                 
-                ce.imageUrl 
 
-            return new OkObjectResult(calendarEntry);
+            return new OkObjectResult(ce);
         }
 
         private List<CalendarEntry> InvokeCalendar()

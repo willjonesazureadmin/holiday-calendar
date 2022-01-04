@@ -31,6 +31,11 @@ namespace api.models
             this.Score = _score;
         }
 
+        public void UpdateImageUrl(string url)
+        {
+            this.imageUrl = url;
+        } 
+
         public void RevealEntry()
         {
             if(this.dateTime > DateTime.Now) {this.imageUrl = Settings.earlyUrl; this.dayNo = "Too Early" ;}

@@ -23,6 +23,7 @@ namespace api
             .AddEnvironmentVariables()
             .Build();
             
+            
             builder.Services.AddDbContext<ReadWriteContext>(options => options.UseSqlServer(config.GetValue<string>("Values:SqldbConnectionString")));   
             builder.Services.AddAzureClients(builder => {
                 builder.AddBlobServiceClient(config.GetSection("Values:PrivateStorage"));
