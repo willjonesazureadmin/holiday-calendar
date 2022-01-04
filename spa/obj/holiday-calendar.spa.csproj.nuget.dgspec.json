@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\willo\\source\\repos\\holiday-calendar\\holiday-calendar.spa\\holiday-calendar.spa.csproj": {}
+    "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\holiday-calendar.spa.csproj": {}
   },
   "projects": {
-    "C:\\Users\\willo\\source\\repos\\holiday-calendar\\holiday-calendar.spa\\holiday-calendar.spa.csproj": {
+    "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\holiday-calendar.spa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\holiday-calendar.spa\\holiday-calendar.spa.csproj",
+        "projectUniqueName": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\holiday-calendar.spa.csproj",
         "projectName": "holiday-calendar.spa",
-        "projectPath": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\holiday-calendar.spa\\holiday-calendar.spa.csproj",
+        "projectPath": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\holiday-calendar.spa.csproj",
         "packagesPath": "C:\\Users\\willo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\holiday-calendar.spa\\obj\\",
+        "outputPath": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\willo\\AppData\\Roaming\\NuGet\\NuGet.Config"

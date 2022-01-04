@@ -12,12 +12,17 @@ namespace api.models
 {
     public class CalendarEntry
     {
+        public Guid Id { get; private set; }
         public string dayNo { get; private set; }
         public DateTime dateTime { get; private set; }
 
-        public string imageUrl { get;private set; }
-        public int Score { get; set; }
+        public string imageUrl { get; private set; }
+        public int Score { get; private set; }
 
+        public CalendarEntry()
+        {
+            
+        }
         public CalendarEntry(string _dayNo, DateTime _dateTime, int _score)
         {
             this.dayNo = _dayNo;
