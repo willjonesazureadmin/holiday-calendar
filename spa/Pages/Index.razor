@@ -1,9 +1,57 @@
 ﻿@page "/"
+@inject HttpClient Http
 
-<PageTitle>Index</PageTitle>
+@using spa.Shared.Models
 
-<h1>Hello, world!</h1>
+<PageTitle>Calendar</PageTitle>
+@if(CalendarEntries == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+<div class=container>
+    <div class="row">
+        @foreach(var ce in CalendarEntries)
+        {
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="card">
+                     <button @onclick="@( e => Reveal(ce))">
+                    <img class="card-img" src="@ce.imageUrl" alt="...">
+                    <div class="card-img-overlay text-white d-flex justify-content-center align-items-end">
+                        <h1>@ce.dayNo.ToString()</h1>
+                    </div>
+                    </button>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+}
 
-Welcome to your new app.
+@code {
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+    private CalendarEntry[]? CalendarEntries;
+
+    private Calendar[]? Calendar;
+
+    protected override async Task OnInitializedAsync()
+    {
+        Calendar = await Http.GetFromJsonAsync<Calendar[]>("api/calendars");
+        if(Calendar != null)
+        {
+            CalendarEntries = await Http.GetFromJsonAsync<CalendarEntry[]>(String.Format("api/calendars/{0}/entries",Calendar.Last().Id));
+
+        }
+
+    }
+
+    private async void Reveal(CalendarEntry e)
+    {
+            var ce = await Http.GetFromJsonAsync<CalendarEntry>(String.Format("api/entries/{0}/reveal",e.Id));
+            e.imageUrl = ce.imageUrl;    
+            this.StateHasChanged();
+    }
+
+
+}

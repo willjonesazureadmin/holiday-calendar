@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\holiday-calendar.spa\\holiday-calendar.spa.csproj",
+  "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\holiday-calendar.spa.csproj",
   "Configuration": {
     "ConfigurationName": "Default",
     "LanguageVersion": "6.0",
@@ -7,6 +7,105 @@
   },
   "ProjectWorkspaceState": {
     "TagHelpers": [
+      {
+        "HashCode": 761081961,
+        "Kind": "Components.Component",
+        "Name": "holiday_calendar.spa.Pages.Counter",
+        "AssemblyName": "holiday-calendar.spa",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "holiday_calendar.spa.Pages.Counter"
+        }
+      },
+      {
+        "HashCode": 317706249,
+        "Kind": "Components.Component",
+        "Name": "holiday_calendar.spa.Pages.Counter",
+        "AssemblyName": "holiday-calendar.spa",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "holiday_calendar.spa.Pages.Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "holiday_calendar.spa.Pages.Counter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 537677715,
+        "Kind": "Components.Component",
+        "Name": "holiday_calendar.spa.Pages.FetchData",
+        "AssemblyName": "holiday-calendar.spa",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "holiday_calendar.spa.Pages.FetchData"
+        }
+      },
+      {
+        "HashCode": 175654477,
+        "Kind": "Components.Component",
+        "Name": "holiday_calendar.spa.Pages.FetchData",
+        "AssemblyName": "holiday-calendar.spa",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "holiday_calendar.spa.Pages.FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "holiday_calendar.spa.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -344758508,
+        "Kind": "Components.Component",
+        "Name": "holiday_calendar.spa.Pages.Index",
+        "AssemblyName": "holiday-calendar.spa",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "holiday_calendar.spa.Pages.Index"
+        }
+      },
+      {
+        "HashCode": 618090128,
+        "Kind": "Components.Component",
+        "Name": "holiday_calendar.spa.Pages.Index",
+        "AssemblyName": "holiday-calendar.spa",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "holiday_calendar.spa.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "holiday_calendar.spa.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
       {
         "HashCode": -311719491,
         "Kind": "Components.Component",
@@ -57,6 +156,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "holiday_calendar.spa.Shared.SurveyPrompt",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -554696905,
+        "Kind": "Components.Component",
+        "Name": "holiday_calendar.spa.Shared.NavMenu",
+        "AssemblyName": "holiday-calendar.spa",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "holiday_calendar.spa.Shared.NavMenu"
+        }
+      },
+      {
+        "HashCode": -24057720,
+        "Kind": "Components.Component",
+        "Name": "holiday_calendar.spa.Shared.NavMenu",
+        "AssemblyName": "holiday-calendar.spa",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "holiday_calendar.spa.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "holiday_calendar.spa.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -153,138 +285,6 @@
           "Runtime.Name": "Components.None",
           "Common.TypeName": "holiday_calendar.spa.Shared.MainLayout.Body",
           "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -554696905,
-        "Kind": "Components.Component",
-        "Name": "holiday_calendar.spa.Shared.NavMenu",
-        "AssemblyName": "holiday-calendar.spa",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "holiday_calendar.spa.Shared.NavMenu"
-        }
-      },
-      {
-        "HashCode": -24057720,
-        "Kind": "Components.Component",
-        "Name": "holiday_calendar.spa.Shared.NavMenu",
-        "AssemblyName": "holiday-calendar.spa",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "holiday_calendar.spa.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "holiday_calendar.spa.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 761081961,
-        "Kind": "Components.Component",
-        "Name": "holiday_calendar.spa.Pages.Counter",
-        "AssemblyName": "holiday-calendar.spa",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "holiday_calendar.spa.Pages.Counter"
-        }
-      },
-      {
-        "HashCode": 317706249,
-        "Kind": "Components.Component",
-        "Name": "holiday_calendar.spa.Pages.Counter",
-        "AssemblyName": "holiday-calendar.spa",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "holiday_calendar.spa.Pages.Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "holiday_calendar.spa.Pages.Counter",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -344758508,
-        "Kind": "Components.Component",
-        "Name": "holiday_calendar.spa.Pages.Index",
-        "AssemblyName": "holiday-calendar.spa",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "holiday_calendar.spa.Pages.Index"
-        }
-      },
-      {
-        "HashCode": 618090128,
-        "Kind": "Components.Component",
-        "Name": "holiday_calendar.spa.Pages.Index",
-        "AssemblyName": "holiday-calendar.spa",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "holiday_calendar.spa.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "holiday_calendar.spa.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 537677715,
-        "Kind": "Components.Component",
-        "Name": "holiday_calendar.spa.Pages.FetchData",
-        "AssemblyName": "holiday-calendar.spa",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "holiday_calendar.spa.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": 175654477,
-        "Kind": "Components.Component",
-        "Name": "holiday_calendar.spa.Pages.FetchData",
-        "AssemblyName": "holiday-calendar.spa",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "holiday_calendar.spa.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "holiday_calendar.spa.Pages.FetchData",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -13639,43 +13639,43 @@
   "RootNamespace": "holiday-calendar.spa",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\holiday-calendar.spa\\Shared\\SurveyPrompt.razor",
-      "TargetPath": "Shared\\SurveyPrompt.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\holiday-calendar.spa\\Shared\\MainLayout.razor",
-      "TargetPath": "Shared\\MainLayout.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\holiday-calendar.spa\\_Imports.razor",
-      "TargetPath": "_Imports.razor",
-      "FileKind": "componentImport"
-    },
-    {
-      "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\holiday-calendar.spa\\Pages\\Counter.razor",
-      "TargetPath": "Pages\\Counter.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\holiday-calendar.spa\\Pages\\Index.razor",
-      "TargetPath": "Pages\\Index.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\holiday-calendar.spa\\App.razor",
+      "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\App.razor",
       "TargetPath": "App.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\holiday-calendar.spa\\Shared\\NavMenu.razor",
-      "TargetPath": "Shared\\NavMenu.razor",
+      "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\_Imports.razor",
+      "TargetPath": "_Imports.razor",
+      "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\Shared\\SurveyPrompt.razor",
+      "TargetPath": "Shared\\SurveyPrompt.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\holiday-calendar.spa\\Pages\\FetchData.razor",
+      "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\Pages\\Counter.razor",
+      "TargetPath": "Pages\\Counter.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\Pages\\Index.razor",
+      "TargetPath": "Pages\\Index.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\Pages\\FetchData.razor",
       "TargetPath": "Pages\\FetchData.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\Shared\\MainLayout.razor",
+      "TargetPath": "Shared\\MainLayout.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\Shared\\NavMenu.razor",
+      "TargetPath": "Shared\\NavMenu.razor",
       "FileKind": "component"
     }
   ],

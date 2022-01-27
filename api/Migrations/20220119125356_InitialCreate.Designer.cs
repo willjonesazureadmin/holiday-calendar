@@ -12,7 +12,7 @@ using api.models;
 namespace api.Migrations
 {
     [DbContext(typeof(ReadWriteContext))]
-    [Migration("20211230091328_InitialCreate")]
+    [Migration("20220119125356_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,22 +24,60 @@ namespace api.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("api.models.Calendar", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("CalendarName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CalendarType")
+                        .HasColumnType("int");
+
+                    b.Property<string>("DefaultReference")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MissingReference")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TooEarlyReference")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("month")
+                        .HasColumnType("int");
+
+                    b.Property<int>("noOfEntries")
+                        .HasColumnType("int");
+
+                    b.Property<int>("year")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Calendar");
+                });
+
             modelBuilder.Entity("api.models.CalendarEntry", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<Guid>("CalendarId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<int>("Score")
+                        .HasColumnType("int");
+
+                    b.Property<int>("calendarType")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("dateTime")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("dayNo")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("imageUrl")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
