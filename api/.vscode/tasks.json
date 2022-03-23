@@ -2,13 +2,6 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "Azure Storage",
-			"command" : "azurite",
-			"args": [
-				"-s .\\azurite -d .\\azurite\\debug.log"
-			]
-		},
-		{
 			"label": "clean (functions)",
 			"command": "dotnet",
 			"args": [

@@ -40,12 +40,6 @@ namespace api.models
             this.imageReference = _containerName;
         }
 
-        public string ImageSASCreate(BlobServiceClient _client, string imageName, string container)
-        {
-            BlobContainerClient _blobclient = _client.GetBlobContainerClient(container);
-            return _blobclient.GetBlobClient(imageName).GenerateSasUri(Azure.Storage.Sas.BlobSasPermissions.Create, DateTimeOffset.Now.AddMinutes(1)).AbsoluteUri.ToString();
-        }
-
         public void UploadImage(BlobServiceClient _client, Stream content, string container)
         {
             BlobContainerClient _blobclient = _client.GetBlobContainerClient(container);
@@ -65,7 +59,7 @@ namespace api.models
                 }
                 else
                 {
-                    this.imageUrl = _blobclient.GetBlobClient(container).GenerateSasUri(Azure.Storage.Sas.BlobSasPermissions.Read, DateTimeOffset.Now.AddMinutes(1)).AbsoluteUri.ToString(); 
+                    this.imageUrl = _blobclient.GetBlobClient(imageReference).GenerateSasUri(Azure.Storage.Sas.BlobSasPermissions.Read, DateTimeOffset.Now.AddMinutes(1)).AbsoluteUri.ToString(); 
                 }
             }
         }

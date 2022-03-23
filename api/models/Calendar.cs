@@ -11,9 +11,13 @@ namespace api.models
     {
         public Guid Id { get; set; }
         public String CalendarName { get; set; }
-        public String ContainerName { get {
-            return Id.ToString();
-        } }
+        public String ContainerName
+        {
+            get
+            {
+                return Id.ToString();
+            }
+        }
         public CalendarType CalendarType { get; set; }
 
         public int month { get; private set; }
@@ -37,40 +41,50 @@ namespace api.models
             this.CalendarType = _CalendarType;
             this.month = month;
             this.year = year;
-            this.noOfEntries = days;           
+            this.noOfEntries = days;
         }
 
-        public async Task UploadImage(BlobServiceClient _client,  string imageType, Stream content, string contentType)
+        public async Task UploadImage(BlobServiceClient _client, string imageType, Stream content, string contentType)
         {
-            var enumImageType = (ImageType)Enum.Parse(typeof(ImageType),imageType);
+            var enumImageType = (ImageType)Enum.Parse(typeof(ImageType), imageType);
             var blobName = this.Id + imageType + "." + contentType.Split('/').Last();
             BlobContainerClient _containerClient = _client.GetBlobContainerClient(this.ContainerName);
             _containerClient.CreateIfNotExists();
-            CancellationToken ct = new CancellationToken();
-        
-            IProgress<long> ph = new Progress<long>( progress => { 
+            IProgress<long> ph = new Progress<long>(progress =>
+            {
                 Console.WriteLine(progress.ToString());
             });
             content.Position = 0;
             var _blobclient = _containerClient.GetBlobClient(blobName);
-            await _blobclient.UploadAsync(content, null, null, null, progressHandler:ph);
+            await _blobclient.UploadAsync(content, null, null, null, progressHandler: ph);
 
-            // uploadTask.GetAwaiter();
-            // while(!uploadTask.IsCompleted)
-            // {
-            //     Console.WriteLine(DateTime.Now.ToString());
-            //     var status = uploadTask.GetAwaiter();                
-            //     Console.WriteLine(status.ToString());
-            //     uploadTask.GetAwaiter();
-            // }
-            
-            if ( enumImageType == ImageType.TooEarly )  this.TooEarlyReference = blobName;
-            if ( enumImageType == ImageType.Default ) this.DefaultReference = blobName;
-            if ( enumImageType == ImageType.Missing ) this.MissingReference = blobName;
+            switch (enumImageType)
+            {
+                case ImageType.TooEarly:
+                    this.TooEarlyReference = blobName;
+                    break;
+                case ImageType.Default:
+                    this.DefaultReference = blobName;
+                    break;
+                case ImageType.Missing:
+                    this.MissingReference = blobName;
+                    break;
+            }
+
+        }
+
+        public void GetImages(BlobServiceClient _client)
+        {
+            BlobContainerClient _blobclient = _client.GetBlobContainerClient(this.ContainerName);
+            if(this.TooEarlyReference != null && this.TooEarlyReference != "") this.TooEarlyReference = _blobclient.GetBlobClient(TooEarlyReference).GenerateSasUri(Azure.Storage.Sas.BlobSasPermissions.Read, DateTimeOffset.Now.AddMinutes(1)).AbsoluteUri.ToString(); else {this.TooEarlyReference = "pending.png";}
+            if(this.DefaultReference != null && this.DefaultReference != "") this.DefaultReference = _blobclient.GetBlobClient(DefaultReference).GenerateSasUri(Azure.Storage.Sas.BlobSasPermissions.Read, DateTimeOffset.Now.AddMinutes(1)).AbsoluteUri.ToString();  else {this.DefaultReference = "pending.png";}
+            if(this.MissingReference != null && this.MissingReference != "") this.MissingReference = _blobclient.GetBlobClient(MissingReference).GenerateSasUri(Azure.Storage.Sas.BlobSasPermissions.Read, DateTimeOffset.Now.AddMinutes(1)).AbsoluteUri.ToString();  else {this.MissingReference = "pending.png";}
+
+
 
         }
 
     }
 
- 
+
 }

@@ -1,15 +1,15 @@
 {
   "Version": 1,
-  "Hash": "lhMbGjkLpvs9xeSdLdpto7O2ZUiqmgGKBTJspKMxlnM=",
-  "Source": "holiday-calendar.spa",
+  "Hash": "9ZCfuKMCedm4cQiNRabEmllxzuN2BYOYev5y5GWbU9o=",
+  "Source": "spa",
   "BasePath": "/",
   "Mode": "Root",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "holiday-calendar.spa\\wwwroot",
-      "Source": "holiday-calendar.spa",
+      "Name": "spa\\wwwroot",
+      "Source": "spa",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\",
       "BasePath": "/",
       "Pattern": "**"
@@ -18,7 +18,7 @@
   "Assets": [
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.boot.json",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -35,7 +35,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -52,7 +52,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\dotnet.6.0.1.a72l7e4bk9.js",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -69,7 +69,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\dotnet.timezones.blat",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -86,7 +86,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\dotnet.wasm",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -102,42 +102,8 @@
       "OriginalItemSpec": "C:\\Users\\willo\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.1\\runtimes\\browser-wasm\\native\\dotnet.wasm"
     },
     {
-      "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\holiday-calendar.spa.dll",
-      "SourceId": "holiday-calendar.spa",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/holiday-calendar.spa.dll",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "runtime",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "obj\\Debug\\net6.0\\holiday-calendar.spa.dll"
-    },
-    {
-      "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\holiday-calendar.spa.pdb",
-      "SourceId": "holiday-calendar.spa",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/holiday-calendar.spa.pdb",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "symbol",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "obj\\Debug\\net6.0\\holiday-calendar.spa.pdb"
-    },
-    {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt_CJK.dat",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -154,7 +120,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt_EFIGS.dat",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -171,7 +137,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt_no_CJK.dat",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -188,7 +154,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt.dat",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -205,7 +171,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -222,7 +188,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -239,7 +205,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -256,7 +222,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -273,7 +239,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -290,7 +256,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -307,7 +273,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.CSharp.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -324,7 +290,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Abstractions.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -341,7 +307,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Binder.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -358,7 +324,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -375,7 +341,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.FileExtensions.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -392,7 +358,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Json.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -409,7 +375,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -426,7 +392,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -443,7 +409,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.FileProviders.Abstractions.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -460,7 +426,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.FileProviders.Physical.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -477,7 +443,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.FileSystemGlobbing.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -494,7 +460,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -511,7 +477,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -528,7 +494,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -545,7 +511,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Primitives.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -562,7 +528,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -579,7 +545,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -596,7 +562,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.VisualBasic.Core.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -613,7 +579,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.VisualBasic.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -630,7 +596,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Win32.Primitives.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -647,7 +613,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Win32.Registry.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -664,7 +630,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\mscorlib.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -681,7 +647,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\netstandard.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -697,8 +663,42 @@
       "OriginalItemSpec": "C:\\Users\\willo\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.1\\runtimes\\browser-wasm\\lib\\net6.0\\netstandard.dll"
     },
     {
+      "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\spa.dll",
+      "SourceId": "spa",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/spa.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "obj\\Debug\\net6.0\\spa.dll"
+    },
+    {
+      "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\spa.pdb",
+      "SourceId": "spa",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/spa.pdb",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "symbol",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "obj\\Debug\\net6.0\\spa.pdb"
+    },
+    {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.AppContext.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -715,7 +715,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Buffers.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -732,7 +732,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Collections.Concurrent.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -749,7 +749,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Collections.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -766,7 +766,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Collections.Immutable.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -783,7 +783,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Collections.NonGeneric.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -800,7 +800,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Collections.Specialized.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -817,7 +817,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ComponentModel.Annotations.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -834,7 +834,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ComponentModel.DataAnnotations.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -851,7 +851,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ComponentModel.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -868,7 +868,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ComponentModel.EventBasedAsync.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -885,7 +885,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ComponentModel.Primitives.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -902,7 +902,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ComponentModel.TypeConverter.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -919,7 +919,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Configuration.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -936,7 +936,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Console.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -953,7 +953,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Core.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -970,7 +970,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Data.Common.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -987,7 +987,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Data.DataSetExtensions.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1004,7 +1004,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Data.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1021,7 +1021,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.Contracts.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1038,7 +1038,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.Debug.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1055,7 +1055,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.DiagnosticSource.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1072,7 +1072,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.FileVersionInfo.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1089,7 +1089,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.Process.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1106,7 +1106,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.StackTrace.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1123,7 +1123,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.TextWriterTraceListener.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1140,7 +1140,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.Tools.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1157,7 +1157,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.TraceSource.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1174,7 +1174,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.Tracing.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1191,7 +1191,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1208,7 +1208,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Drawing.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1225,7 +1225,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Drawing.Primitives.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1242,7 +1242,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Dynamic.Runtime.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1259,7 +1259,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Formats.Asn1.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1276,7 +1276,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Globalization.Calendars.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1293,7 +1293,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Globalization.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1310,7 +1310,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Globalization.Extensions.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1327,7 +1327,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Compression.Brotli.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1344,7 +1344,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Compression.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1361,7 +1361,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Compression.FileSystem.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1378,7 +1378,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Compression.ZipFile.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1395,7 +1395,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1412,7 +1412,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.FileSystem.AccessControl.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1429,7 +1429,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.FileSystem.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1446,7 +1446,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.FileSystem.DriveInfo.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1463,7 +1463,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.FileSystem.Primitives.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1480,7 +1480,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.FileSystem.Watcher.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1497,7 +1497,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.IsolatedStorage.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1514,7 +1514,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.MemoryMappedFiles.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1531,7 +1531,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipelines.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1548,7 +1548,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipes.AccessControl.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1565,7 +1565,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipes.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1582,7 +1582,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.UnmanagedMemoryStream.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1599,7 +1599,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Linq.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1616,7 +1616,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Linq.Expressions.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1633,7 +1633,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Linq.Parallel.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1650,7 +1650,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Linq.Queryable.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1667,7 +1667,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Memory.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1684,7 +1684,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1701,7 +1701,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Http.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1718,7 +1718,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Http.Json.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1735,7 +1735,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.HttpListener.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1752,7 +1752,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Mail.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1769,7 +1769,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.NameResolution.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1786,7 +1786,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.NetworkInformation.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1803,7 +1803,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Ping.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1820,7 +1820,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Primitives.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1837,7 +1837,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Quic.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1854,7 +1854,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Requests.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1871,7 +1871,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Security.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1888,7 +1888,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.ServicePoint.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1905,7 +1905,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Sockets.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1922,7 +1922,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.WebClient.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1939,7 +1939,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.WebHeaderCollection.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1956,7 +1956,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.WebProxy.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1973,7 +1973,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.WebSockets.Client.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -1990,7 +1990,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.WebSockets.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2007,7 +2007,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Numerics.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2024,7 +2024,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Numerics.Vectors.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2041,7 +2041,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ObjectModel.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2058,7 +2058,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Private.CoreLib.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2075,7 +2075,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Private.DataContractSerialization.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2092,7 +2092,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Private.Runtime.InteropServices.JavaScript.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2109,7 +2109,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Private.Uri.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2126,7 +2126,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Private.Xml.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2143,7 +2143,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Private.Xml.Linq.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2160,7 +2160,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.DispatchProxy.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2177,7 +2177,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2194,7 +2194,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.Emit.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2211,7 +2211,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.Emit.ILGeneration.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2228,7 +2228,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.Emit.Lightweight.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2245,7 +2245,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.Extensions.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2262,7 +2262,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.Metadata.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2279,7 +2279,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.Primitives.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2296,7 +2296,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.TypeExtensions.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2313,7 +2313,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Resources.Reader.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2330,7 +2330,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Resources.ResourceManager.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2347,7 +2347,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Resources.Writer.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2364,7 +2364,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.CompilerServices.Unsafe.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2381,7 +2381,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.CompilerServices.VisualC.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2398,7 +2398,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2415,7 +2415,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Extensions.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2432,7 +2432,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Handles.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2449,7 +2449,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.InteropServices.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2466,7 +2466,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.InteropServices.RuntimeInformation.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2483,7 +2483,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Intrinsics.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2500,7 +2500,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Loader.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2517,7 +2517,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Numerics.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2534,7 +2534,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Serialization.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2551,7 +2551,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Serialization.Formatters.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2568,7 +2568,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Serialization.Json.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2585,7 +2585,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Serialization.Primitives.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2602,7 +2602,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Serialization.Xml.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2619,7 +2619,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.AccessControl.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2636,7 +2636,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Claims.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2653,7 +2653,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Cryptography.Algorithms.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2670,7 +2670,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Cryptography.Cng.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2687,7 +2687,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Cryptography.Csp.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2704,7 +2704,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Cryptography.Encoding.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2721,7 +2721,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Cryptography.OpenSsl.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2738,7 +2738,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Cryptography.Primitives.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2755,7 +2755,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Cryptography.X509Certificates.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2772,7 +2772,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2789,7 +2789,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Principal.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2806,7 +2806,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Principal.Windows.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2823,7 +2823,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.SecureString.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2840,7 +2840,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ServiceModel.Web.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2857,7 +2857,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ServiceProcess.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2874,7 +2874,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Text.Encoding.CodePages.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2891,7 +2891,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Text.Encoding.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2908,7 +2908,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Text.Encoding.Extensions.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2925,7 +2925,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Text.Encodings.Web.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2942,7 +2942,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Text.Json.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2959,7 +2959,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Text.RegularExpressions.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2976,7 +2976,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Channels.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -2993,7 +2993,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3010,7 +3010,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Overlapped.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3027,7 +3027,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Tasks.Dataflow.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3044,7 +3044,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Tasks.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3061,7 +3061,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Tasks.Extensions.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3078,7 +3078,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Tasks.Parallel.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3095,7 +3095,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Thread.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3112,7 +3112,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.ThreadPool.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3129,7 +3129,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Timer.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3146,7 +3146,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Transactions.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3163,7 +3163,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Transactions.Local.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3180,7 +3180,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ValueTuple.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3197,7 +3197,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Web.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3214,7 +3214,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Web.HttpUtility.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3231,7 +3231,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Windows.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3248,7 +3248,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3265,7 +3265,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.Linq.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3282,7 +3282,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.ReaderWriter.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3299,7 +3299,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.Serialization.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3316,7 +3316,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.XDocument.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3333,7 +3333,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.XmlDocument.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3350,7 +3350,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.XmlSerializer.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3367,7 +3367,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.XPath.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3384,7 +3384,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.XPath.XDocument.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3401,7 +3401,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\WindowsBase.dll",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3418,7 +3418,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\+4FNZegf.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3435,7 +3435,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\+bWB1Wuz.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3452,7 +3452,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\+NLPhzTv.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3469,7 +3469,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\+zjPGvdO.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3486,7 +3486,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\0GSvKzUu.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3503,7 +3503,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\0wZPIBTS.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3520,7 +3520,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\0YAWUAME.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3537,7 +3537,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\15Wicowb.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3554,7 +3554,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\18UUCC+h.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3571,7 +3571,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\25wsgrX4.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3588,7 +3588,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\2a4ai2Eh.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3605,7 +3605,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\2beQVftf.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3622,7 +3622,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\2cJ2p9DN.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3639,7 +3639,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\3c8UFibl.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3656,7 +3656,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\3QHPaxvP.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3673,7 +3673,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\3tmBjRMb.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3690,7 +3690,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\4GY2AmKN.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3707,7 +3707,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\4IxvcRE7.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3724,7 +3724,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\67PWr4EV.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3741,7 +3741,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\6QKL6+X3.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3758,7 +3758,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\7+woA2hy.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3775,7 +3775,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\7fyd4L9n.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3792,7 +3792,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\7poUTrNB.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3809,7 +3809,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\7TITsY3W.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3826,7 +3826,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\7uNZeDFE.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3843,7 +3843,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\7uxRfUUd.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3860,7 +3860,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\7yInmVPG.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3877,7 +3877,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\8Bf8zyts.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3894,7 +3894,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\8CldWRym.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3911,7 +3911,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\8FWo90Z+.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3928,7 +3928,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\8M4FZHaf.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3945,7 +3945,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\9jV38Sf4.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3962,7 +3962,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\9NGO82Qa.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3979,7 +3979,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\9OfYcpyt.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -3996,7 +3996,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\Ae3W5AoS.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4013,7 +4013,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\AkwGe4n9.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4030,7 +4030,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\AQIiXvoG.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4047,7 +4047,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\bixLItZ9.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4064,7 +4064,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\bO3aMjbd.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4081,7 +4081,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\BPHWqF+L.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4098,7 +4098,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\BtND+HyT.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4115,7 +4115,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\BvMekNPG.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4132,7 +4132,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\Bz8xMlm0.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4149,7 +4149,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\CGFS1cb+.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4166,7 +4166,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\cJjoFVM7.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4183,7 +4183,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\CQZY4A9c.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4200,7 +4200,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\dFHDsUPU.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4217,7 +4217,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\DfKkWt5Z.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4234,7 +4234,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\dNEJVN7W.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4251,7 +4251,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\dUc6Eovi.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4268,7 +4268,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\dUVKhR2j.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4285,7 +4285,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\DZ3JKiIw.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4302,7 +4302,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\eQ+LqpIQ.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4319,7 +4319,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\eqoCSdhl.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4336,7 +4336,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\ErnNfjHU.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4353,7 +4353,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\Et1JWbr0.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4370,7 +4370,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\f8nxXhNf.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4387,7 +4387,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\FGKw0+FV.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4404,7 +4404,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\fj062ZVQ.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4421,7 +4421,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\FjnhPtG8.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4438,7 +4438,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\FvyKcoTe.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4455,7 +4455,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\G7GmCy9H.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4472,7 +4472,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\GfdLiaye.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4489,7 +4489,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\GKjkjKRo.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4506,7 +4506,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\gktqspXa.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4523,7 +4523,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\gS3m6D0a.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4540,7 +4540,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\H5rhYEou.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4557,7 +4557,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\H9FWHiOp.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4574,7 +4574,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\HGE+Mhkz.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4591,7 +4591,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\hn6dD0QU.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4608,7 +4608,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\hQdbrZZP.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4625,7 +4625,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\hqeAJZMY.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4642,7 +4642,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\Hssg+6wl.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4659,7 +4659,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\HtaS2GyN.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4676,7 +4676,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\HxcEp2+b.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4693,7 +4693,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\HxVX6YJ3.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4710,7 +4710,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\iBm1QWZ1.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4727,7 +4727,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\Ie6w73yc.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4744,7 +4744,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\iFpgy6Wp.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4761,7 +4761,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\Isd5VmyT.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4778,7 +4778,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\iTvZzYiE.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4795,7 +4795,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\iUge6EJB.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4812,7 +4812,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\iVFGDTqn.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4829,7 +4829,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\J1NR1j5z.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4846,7 +4846,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\jlhRlMx0.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4863,7 +4863,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\jQV87MCm.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4880,7 +4880,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\JSBTyYPx.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4896,25 +4896,8 @@
       "OriginalItemSpec": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Numerics.Vectors.dll"
     },
     {
-      "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\jt2CRtjH.gz",
-      "SourceId": "holiday-calendar.spa",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/holiday-calendar.spa.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\holiday-calendar.spa.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\holiday-calendar.spa.dll"
-    },
-    {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\k2GNXRH8.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4931,7 +4914,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\k4EHPZ+F.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4948,7 +4931,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\K8SIILj1.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4965,7 +4948,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\KeInz0Ym.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4982,7 +4965,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\KmTyXzJH.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -4999,7 +4982,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\KQiOMozw.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5016,7 +4999,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\Kv3D4noi.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5033,7 +5016,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\l++ekw5W.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5050,7 +5033,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\l2uCHBVR.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5067,7 +5050,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\LE9gRKdT.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5084,7 +5067,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\lEyuBVr1.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5101,7 +5084,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\Lw3D4R8v.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5118,7 +5101,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\ly9yixdM.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5135,7 +5118,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\m5enKSYx.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5152,7 +5135,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\MlEYtGdF.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5169,7 +5152,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\mPKIf4a4.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5186,7 +5169,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\mrI8L8Yp.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5202,8 +5185,25 @@
       "OriginalItemSpec": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll"
     },
     {
+      "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\mv9c+X+i.gz",
+      "SourceId": "spa",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/spa.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\spa.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\spa.dll"
+    },
+    {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\mwSdWG5U.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5220,7 +5220,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\NanlWewG.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5237,7 +5237,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\nFKGsAtU.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5254,7 +5254,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\NIHT+eED.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5271,7 +5271,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\nlu6wuTI.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5288,7 +5288,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\Ns8M5cd9.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5305,7 +5305,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\nYhQ1gFK.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5322,7 +5322,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\nZRyRqUh.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5339,7 +5339,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\oh7iL47m.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5356,7 +5356,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\OHRyzKmA.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5373,7 +5373,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\OIsmtdT4.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5390,7 +5390,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\oKsLWpCk.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5407,7 +5407,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\OO+D+dlV.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5424,7 +5424,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\OoKhuXF4.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5441,7 +5441,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\ooMaCuK6.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5458,7 +5458,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\oqJ2uc7U.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5475,7 +5475,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\OYPZ+f3w.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5492,7 +5492,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\pbN87oIl.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5509,7 +5509,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\Pd7k3vBA.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5526,7 +5526,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\PFjUZ7Er.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5543,7 +5543,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\PMbkxwmj.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5560,7 +5560,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\qbqHw0Jd.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5577,7 +5577,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\QDbOZa2T.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5594,7 +5594,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\QG2FCWIF.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5611,7 +5611,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\qL+YUcBl.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5628,7 +5628,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\qR9uDp8v.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5645,7 +5645,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\qSsmOgXx.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5662,7 +5662,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\qWaSQzI+.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5679,7 +5679,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\R0Nfn46z.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5696,7 +5696,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\r52aJtDY.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5713,7 +5713,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\R9jenjey.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5730,7 +5730,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\RL14FYIk.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5747,7 +5747,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\rUO06EP8.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5764,7 +5764,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\sb+Z0by5.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5781,7 +5781,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\SFn5xrn6.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5798,7 +5798,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\shjCV8bq.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5815,7 +5815,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\SiHy1c2J.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5832,7 +5832,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\SMYa+vyC.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5849,7 +5849,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\soh89APU.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5866,7 +5866,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\SSnNI+zr.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5883,7 +5883,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\StUykbH9.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5900,7 +5900,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\suFbTmuT.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5917,7 +5917,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\SVxo+OgP.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5934,7 +5934,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\t1HsRQ3m.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5951,7 +5951,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\tApYeXit.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5968,7 +5968,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\TazN0+xH.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -5985,7 +5985,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\teTBB98e.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6002,7 +6002,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\tfQjnGDQ.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6019,7 +6019,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\THkRbviq.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6036,7 +6036,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\tq4mWNOQ.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6053,7 +6053,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\TVOPfpbC.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6070,7 +6070,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\U94jsHYb.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6087,7 +6087,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\uBLR3MUv.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6104,7 +6104,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\UeUqXCnD.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6121,7 +6121,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\UIears3J.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6138,7 +6138,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\uoLSlfOH.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6155,7 +6155,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\UpiROGou.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6172,7 +6172,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\uQ9NMq6v.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6189,7 +6189,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\UrWQs+rn.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6206,7 +6206,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\uvMgAMCz.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6223,7 +6223,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\v0DeOQo8.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6240,7 +6240,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\vLi+MeOs.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6257,7 +6257,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\VW2bcG22.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6274,7 +6274,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\W+8Wg0Cw.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6291,7 +6291,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\WDZ+cjbB.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6308,7 +6308,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\wgPzkDPd.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6325,7 +6325,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\wHiVJUx9.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6342,7 +6342,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\WioR3oJV.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6358,8 +6358,25 @@
       "OriginalItemSpec": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ComponentModel.TypeConverter.dll"
     },
     {
+      "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\wPWzRdew.gz",
+      "SourceId": "spa",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/spa.pdb.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\spa.pdb",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\spa.pdb"
+    },
+    {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\WxJ+Btdl.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6376,7 +6393,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\X3uZhQRd.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6393,7 +6410,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\xea6DRLl.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6410,7 +6427,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\XGZoRd2p.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6426,25 +6443,8 @@
       "OriginalItemSpec": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Numerics.dll"
     },
     {
-      "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\XHH0rlHs.gz",
-      "SourceId": "holiday-calendar.spa",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/holiday-calendar.spa.pdb.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\holiday-calendar.spa.pdb",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\holiday-calendar.spa.pdb"
-    },
-    {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\Xhkz8BkG.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6461,7 +6461,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\xkUbQIbJ.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6478,7 +6478,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\xpNSLJUh.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6495,7 +6495,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\Xre36KZm.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6512,7 +6512,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\XSOQEyxM.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6529,7 +6529,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\y295PdrI.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6546,7 +6546,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\y4auAQ5f.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6563,7 +6563,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\Y6Gd+wAV.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6580,7 +6580,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\YpUUV0Ht.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6597,7 +6597,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\YwYQZu8T.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6614,7 +6614,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\YY7e2JoA.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6631,7 +6631,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\Z+cb8Dwf.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6648,7 +6648,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\z4YsziXs.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6665,7 +6665,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\ZBURevhk.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6682,7 +6682,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\zDEnyx7+.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6699,7 +6699,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\ZFaPm1JP.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6716,7 +6716,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\zg2KyLaR.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6733,7 +6733,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\zKW43zPI.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6750,7 +6750,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\zvKa6gJz.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6767,7 +6767,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\zYB+VJQo.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6784,7 +6784,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\ZZ5eyWid.gz",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
@@ -6800,12 +6800,12 @@
       "OriginalItemSpec": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ComponentModel.EventBasedAsync.dll"
     },
     {
-      "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\scopedcss\\bundle\\holiday-calendar.spa.styles.css",
-      "SourceId": "holiday-calendar.spa",
+      "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\scopedcss\\bundle\\spa.styles.css",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "/",
-      "RelativePath": "holiday-calendar.spa.styles.css",
+      "RelativePath": "spa.styles.css",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Primary",
@@ -6814,15 +6814,15 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\scopedcss\\bundle\\holiday-calendar.spa.styles.css"
+      "OriginalItemSpec": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\scopedcss\\bundle\\spa.styles.css"
     },
     {
-      "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\holiday-calendar.spa.bundle.scp.css",
-      "SourceId": "holiday-calendar.spa",
+      "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\spa.bundle.scp.css",
+      "SourceId": "spa",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "/",
-      "RelativePath": "holiday-calendar.spa.bundle.scp.css",
+      "RelativePath": "spa.bundle.scp.css",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Primary",
@@ -6831,11 +6831,11 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\holiday-calendar.spa.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\spa.bundle.scp.css"
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\css\\app.css",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\",
       "BasePath": "/",
@@ -6852,7 +6852,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\",
       "BasePath": "/",
@@ -6869,7 +6869,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\",
       "BasePath": "/",
@@ -6886,7 +6886,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\",
       "BasePath": "/",
@@ -6903,7 +6903,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\",
       "BasePath": "/",
@@ -6920,7 +6920,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\",
       "BasePath": "/",
@@ -6937,7 +6937,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\",
       "BasePath": "/",
@@ -6954,7 +6954,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\",
       "BasePath": "/",
@@ -6971,7 +6971,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\",
       "BasePath": "/",
@@ -6988,7 +6988,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\",
       "BasePath": "/",
@@ -7005,7 +7005,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\",
       "BasePath": "/",
@@ -7022,7 +7022,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\css\\open-iconic\\README.md",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\",
       "BasePath": "/",
@@ -7038,8 +7038,42 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
+      "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\error.gif",
+      "SourceId": "spa",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "error.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\error.gif"
+    },
+    {
+      "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\error.jpg",
+      "SourceId": "spa",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "error.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\error.jpg"
+    },
+    {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\favicon.ico",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\",
       "BasePath": "/",
@@ -7056,7 +7090,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\icon-192.png",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\",
       "BasePath": "/",
@@ -7073,7 +7107,7 @@
     },
     {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\index.html",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\",
       "BasePath": "/",
@@ -7089,8 +7123,42 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
+      "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\loading.gif",
+      "SourceId": "spa",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "loading.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\loading.gif"
+    },
+    {
+      "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\pending.png",
+      "SourceId": "spa",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "pending.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\pending.png"
+    },
+    {
       "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\sample-data\\weather.json",
-      "SourceId": "holiday-calendar.spa",
+      "SourceId": "spa",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\",
       "BasePath": "/",
@@ -7104,23 +7172,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\sample-data\\weather.json"
-    },
-    {
-      "Identity": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\staticwebapp.config.json",
-      "SourceId": "holiday-calendar.spa",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "staticwebapp.config.json",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\staticwebapp.config.json"
     }
   ]
 }

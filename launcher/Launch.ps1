@@ -1,0 +1,1 @@
+swa start https://localhost:7022/ --api-location http://localhost:7071/

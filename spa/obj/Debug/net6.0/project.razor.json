@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\holiday-calendar.spa.csproj",
+  "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\spa.csproj",
   "Configuration": {
     "ConfigurationName": "Default",
     "LanguageVersion": "6.0",
@@ -8,109 +8,10 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 761081961,
+        "HashCode": 2009321406,
         "Kind": "Components.Component",
-        "Name": "holiday_calendar.spa.Pages.Counter",
-        "AssemblyName": "holiday-calendar.spa",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "holiday_calendar.spa.Pages.Counter"
-        }
-      },
-      {
-        "HashCode": 317706249,
-        "Kind": "Components.Component",
-        "Name": "holiday_calendar.spa.Pages.Counter",
-        "AssemblyName": "holiday-calendar.spa",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "holiday_calendar.spa.Pages.Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "holiday_calendar.spa.Pages.Counter",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 537677715,
-        "Kind": "Components.Component",
-        "Name": "holiday_calendar.spa.Pages.FetchData",
-        "AssemblyName": "holiday-calendar.spa",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "holiday_calendar.spa.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": 175654477,
-        "Kind": "Components.Component",
-        "Name": "holiday_calendar.spa.Pages.FetchData",
-        "AssemblyName": "holiday-calendar.spa",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "holiday_calendar.spa.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "holiday_calendar.spa.Pages.FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -344758508,
-        "Kind": "Components.Component",
-        "Name": "holiday_calendar.spa.Pages.Index",
-        "AssemblyName": "holiday-calendar.spa",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "holiday_calendar.spa.Pages.Index"
-        }
-      },
-      {
-        "HashCode": 618090128,
-        "Kind": "Components.Component",
-        "Name": "holiday_calendar.spa.Pages.Index",
-        "AssemblyName": "holiday-calendar.spa",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "holiday_calendar.spa.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "holiday_calendar.spa.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -311719491,
-        "Kind": "Components.Component",
-        "Name": "holiday_calendar.spa.Shared.SurveyPrompt",
-        "AssemblyName": "holiday-calendar.spa",
+        "Name": "spa.Shared.SurveyPrompt",
+        "AssemblyName": "spa",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -129,18 +30,18 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "holiday_calendar.spa.Shared.SurveyPrompt"
+          "Common.TypeName": "spa.Shared.SurveyPrompt"
         }
       },
       {
-        "HashCode": -407759693,
+        "HashCode": 733471528,
         "Kind": "Components.Component",
-        "Name": "holiday_calendar.spa.Shared.SurveyPrompt",
-        "AssemblyName": "holiday-calendar.spa",
+        "Name": "spa.Shared.SurveyPrompt",
+        "AssemblyName": "spa",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "holiday_calendar.spa.Shared.SurveyPrompt"
+            "TagName": "spa.Shared.SurveyPrompt"
           }
         ],
         "BoundAttributes": [
@@ -155,48 +56,15 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "holiday_calendar.spa.Shared.SurveyPrompt",
+          "Common.TypeName": "spa.Shared.SurveyPrompt",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -554696905,
+        "HashCode": -849411053,
         "Kind": "Components.Component",
-        "Name": "holiday_calendar.spa.Shared.NavMenu",
-        "AssemblyName": "holiday-calendar.spa",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "holiday_calendar.spa.Shared.NavMenu"
-        }
-      },
-      {
-        "HashCode": -24057720,
-        "Kind": "Components.Component",
-        "Name": "holiday_calendar.spa.Shared.NavMenu",
-        "AssemblyName": "holiday-calendar.spa",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "holiday_calendar.spa.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "holiday_calendar.spa.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 301796816,
-        "Kind": "Components.Component",
-        "Name": "holiday_calendar.spa.Shared.MainLayout",
-        "AssemblyName": "holiday-calendar.spa",
+        "Name": "spa.Shared.MainLayout",
+        "AssemblyName": "spa",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -217,18 +85,18 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "holiday_calendar.spa.Shared.MainLayout"
+          "Common.TypeName": "spa.Shared.MainLayout"
         }
       },
       {
-        "HashCode": 2016591818,
+        "HashCode": -888755539,
         "Kind": "Components.Component",
-        "Name": "holiday_calendar.spa.Shared.MainLayout",
-        "AssemblyName": "holiday-calendar.spa",
+        "Name": "spa.Shared.MainLayout",
+        "AssemblyName": "spa",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "holiday_calendar.spa.Shared.MainLayout"
+            "TagName": "spa.Shared.MainLayout"
           }
         ],
         "BoundAttributes": [
@@ -245,15 +113,15 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "holiday_calendar.spa.Shared.MainLayout",
+          "Common.TypeName": "spa.Shared.MainLayout",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 1743172064,
+        "HashCode": -1801971151,
         "Kind": "Components.ChildContent",
-        "Name": "holiday_calendar.spa.Shared.MainLayout.Body",
-        "AssemblyName": "holiday-calendar.spa",
+        "Name": "spa.Shared.MainLayout.Body",
+        "AssemblyName": "spa",
         "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
         "CaseSensitive": true,
         "TagMatchingRules": [
@@ -264,35 +132,68 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "holiday_calendar.spa.Shared.MainLayout.Body",
+          "Common.TypeName": "spa.Shared.MainLayout.Body",
           "Components.IsSpecialKind": "Components.ChildContent"
         }
       },
       {
-        "HashCode": -777281648,
+        "HashCode": -590341553,
         "Kind": "Components.ChildContent",
-        "Name": "holiday_calendar.spa.Shared.MainLayout.Body",
-        "AssemblyName": "holiday-calendar.spa",
+        "Name": "spa.Shared.MainLayout.Body",
+        "AssemblyName": "spa",
         "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
             "TagName": "Body",
-            "ParentTag": "holiday_calendar.spa.Shared.MainLayout"
+            "ParentTag": "spa.Shared.MainLayout"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "holiday_calendar.spa.Shared.MainLayout.Body",
+          "Common.TypeName": "spa.Shared.MainLayout.Body",
           "Components.IsSpecialKind": "Components.ChildContent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 2065093038,
+        "HashCode": 801597202,
         "Kind": "Components.Component",
-        "Name": "holiday_calendar.spa.App",
-        "AssemblyName": "holiday-calendar.spa",
+        "Name": "spa.Shared.NavMenu",
+        "AssemblyName": "spa",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "spa.Shared.NavMenu"
+        }
+      },
+      {
+        "HashCode": 1679869005,
+        "Kind": "Components.Component",
+        "Name": "spa.Shared.NavMenu",
+        "AssemblyName": "spa",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "spa.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "spa.Shared.NavMenu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 237741612,
+        "Kind": "Components.Component",
+        "Name": "spa.App",
+        "AssemblyName": "spa",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
@@ -301,23 +202,188 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "holiday_calendar.spa.App"
+          "Common.TypeName": "spa.App"
         }
       },
       {
-        "HashCode": 1948248172,
+        "HashCode": 1483054657,
         "Kind": "Components.Component",
-        "Name": "holiday_calendar.spa.App",
-        "AssemblyName": "holiday-calendar.spa",
+        "Name": "spa.App",
+        "AssemblyName": "spa",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "holiday_calendar.spa.App"
+            "TagName": "spa.App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "holiday_calendar.spa.App",
+          "Common.TypeName": "spa.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -789951769,
+        "Kind": "Components.Component",
+        "Name": "spa.Pages.Calendars.Add",
+        "AssemblyName": "spa",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Add"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "spa.Pages.Calendars.Add"
+        }
+      },
+      {
+        "HashCode": 608073840,
+        "Kind": "Components.Component",
+        "Name": "spa.Pages.Calendars.Add",
+        "AssemblyName": "spa",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "spa.Pages.Calendars.Add"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "spa.Pages.Calendars.Add",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -289112282,
+        "Kind": "Components.Component",
+        "Name": "spa.Pages.Calendars.Index",
+        "AssemblyName": "spa",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "spa.Pages.Calendars.Index"
+        }
+      },
+      {
+        "HashCode": -1725053027,
+        "Kind": "Components.Component",
+        "Name": "spa.Pages.Calendars.Index",
+        "AssemblyName": "spa",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "spa.Pages.Calendars.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "spa.Pages.Calendars.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 81892022,
+        "Kind": "Components.Component",
+        "Name": "spa.Pages.Error",
+        "AssemblyName": "spa",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Error"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "spa.Pages.Error"
+        }
+      },
+      {
+        "HashCode": 488745964,
+        "Kind": "Components.Component",
+        "Name": "spa.Pages.Error",
+        "AssemblyName": "spa",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "spa.Pages.Error"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "spa.Pages.Error",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -914217671,
+        "Kind": "Components.Component",
+        "Name": "spa.Pages.FetchData",
+        "AssemblyName": "spa",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "spa.Pages.FetchData"
+        }
+      },
+      {
+        "HashCode": -1632212559,
+        "Kind": "Components.Component",
+        "Name": "spa.Pages.FetchData",
+        "AssemblyName": "spa",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "spa.Pages.FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "spa.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 694301243,
+        "Kind": "Components.Component",
+        "Name": "spa.Pages.Index",
+        "AssemblyName": "spa",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "spa.Pages.Index"
+        }
+      },
+      {
+        "HashCode": 799084430,
+        "Kind": "Components.Component",
+        "Name": "spa.Pages.Index",
+        "AssemblyName": "spa",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "spa.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "spa.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -13636,11 +13702,16 @@
     ],
     "CSharpLanguageVersion": 1000
   },
-  "RootNamespace": "holiday-calendar.spa",
+  "RootNamespace": "spa",
   "Documents": [
     {
       "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\App.razor",
       "TargetPath": "App.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\Pages\\Calendars\\Add.razor",
+      "TargetPath": "Pages\\Calendars\\Add.razor",
       "FileKind": "component"
     },
     {
@@ -13649,18 +13720,28 @@
       "FileKind": "componentImport"
     },
     {
+      "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\Pages\\Error.razor",
+      "TargetPath": "Pages\\Error.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\Shared\\SurveyPrompt.razor",
       "TargetPath": "Shared\\SurveyPrompt.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\Pages\\Counter.razor",
-      "TargetPath": "Pages\\Counter.razor",
+      "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\Pages\\Calendars\\Index.razor",
+      "TargetPath": "Pages\\Calendars\\Index.razor",
       "FileKind": "component"
     },
     {
       "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\Pages\\Index.razor",
       "TargetPath": "Pages\\Index.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\Pages\\Calendars\\Edit.razor",
+      "TargetPath": "Pages\\Calendars\\Edit.razor",
       "FileKind": "component"
     },
     {

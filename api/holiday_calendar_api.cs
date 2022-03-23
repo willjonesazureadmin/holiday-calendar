@@ -49,8 +49,14 @@ namespace api
             [HttpTrigger(AuthorizationLevel.Function, "get", Route = "calendars/{id}")] HttpRequest req, Guid Id, ILogger log)
         {
             log.LogInformation("Get Calendar By Id Requested");
-            var calendar = await GetCalendar(Id);
-            return new OkObjectResult(calendar);
+            var c = await GetCalendar(Id);
+
+            if (c != null)
+            {
+                c.GetImages(this._blobServiceClient);
+                return new OkObjectResult(c);
+            }
+            return new NotFoundObjectResult(null);
         }
 
         [FunctionName("holiday_calendar_add")]
@@ -64,7 +70,7 @@ namespace api
                 requestBody = await streamReader.ReadToEndAsync();
             }
             dynamic data = JsonConvert.DeserializeObject(requestBody);
-            int days = data?.days;
+            int days = data?.noOfEntries;
             int month = data?.month;
             int year = data?.year;
             CalendarType type = data?.calendarType;
@@ -92,13 +98,13 @@ namespace api
                 if (c != null)
                 {
                     uploadStream.Position = 0;
-                    // using (var image = Image.Load(uploadStream, out format))
-                    // {
+                    using (var image = Image.Load(uploadStream, out format))
+                    {
 
-                    //     image.Mutate(x => x.Resize(480, 480));
-                    //     image.Save(resizeStream, format);
-                    // }
-                    await c.UploadImage(_blobServiceClient, imageType, uploadStream, contentType);
+                        image.Mutate(x => x.Resize(480, 480));
+                        image.Save(resizeStream, format);
+                    }
+                    await c.UploadImage(_blobServiceClient, imageType, resizeStream, contentType);
                     _readwritecontext.Entry(c).State = EntityState.Modified;
                     _readwritecontext.SaveChanges();
                     return new OkObjectResult(c);
@@ -149,6 +155,7 @@ namespace api
             return new NotFoundObjectResult(null);
 
         }
+
 
         [FunctionName("holiday_calendar_entry_patch_image")]
         public async Task<IActionResult> hce_patch_image(

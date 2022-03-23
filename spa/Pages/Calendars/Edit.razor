@@ -1,0 +1,145 @@
+@page "/calendars/Edit/{calendarId}"
+@using spa.Shared.Models
+@using System.Linq
+@using System.Net.Http.Headers
+@inject HttpClient Http
+@inject NavigationManager nav
+
+<PageTitle>Calendar</PageTitle>
+<div class=container>
+
+    @if (cal == null)
+    {
+        <div class="row">
+            <p>There is nothing here....</p>
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            <h2>@cal.CalendarName</h2>
+            <EditForm Model="@cal" OnValidSubmit="@HandleValidSubmit">
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>
+                            Calendar Name
+                            <InputText class="form-control" id="CalendarName" @bind-Value="cal.CalendarName" />
+                        </Label>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>
+                            Calendar Type:
+                            <InputSelect @bind-Value="cal.CalendarType" class="form-control">
+                                <option value="">Select Type ...</option>
+                                @foreach (var item in Enum.GetValues(typeof(CalendarType)))
+                                {
+                                <option value="@item">@item</option>
+                                }
+                        </InputSelect>
+                    </label>
+                </div>
+            </div>
+            <div class="form-row">
+
+                <div class="form-group col-md-4">
+                    <label>
+                        Month
+                        <InputNumber class="form-control" id="month" @bind-Value="cal.month" />
+                    </label>
+                </div>
+                <div class="form-group col-md-4">
+                    <label>
+                        Year
+                        <InputNumber class="form-control" id="year" @bind-Value="cal.year" />
+                    </label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>
+                        No of Entries
+                        <InputNumber class="form-control" id="entries" @bind-Value="cal.noOfEntries" />
+                    </label>
+                </div>
+                <div class="form-group col-md-4">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+                </div>
+        </EditForm>
+                    </div>
+
+        <p />
+
+        <div class="row">
+            <div class="col-md-12 col-lg-4">
+                <div class="card">
+                    <img class="card-img" src="@cal.DefaultReference" alt="...">
+                    <p />
+                    <InputFile OnChange="@( e => LoadFiles(e, cal, ImageType.Default.ToString()))"
+                        class="btn btn-primary" />
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <div class="card">
+                    <img class="card-img" src="@cal.MissingReference" alt="...">
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <div class="card">
+                    <img class="card-img" src="@cal.TooEarlyReference" alt="...">
+                </div>
+            </div>
+        </div>
+    }
+</div>
+@code {
+
+    [Parameter]
+    public string? calendarId { get; set; }
+    public Calendar cal = new Calendar();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            cal = await Http.GetFromJsonAsync<Calendar>(String.Format("api/calendars/{0}", calendarId));
+        }
+        catch
+        {
+            nav.NavigateTo("/Error");
+        }
+    }
+
+    private async void LoadFiles(InputFileChangeEventArgs e, Calendar c, string i)
+    {
+        var fileContent =
+        new StreamContent(e.File.OpenReadStream(maxAllowedSize: 10000000));
+
+        fileContent.Headers.ContentType =
+        new MediaTypeHeaderValue(e.File.ContentType);
+
+        try
+        {
+            var u = String.Format("api/calendars/{0}/image/{1}/$value", c.Id, i);
+            Console.WriteLine(String.Format("Uploading Files to {0}", u));
+
+            var r = await Http.PatchAsync(u, fileContent);
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
+
+    }
+    private void HandleValidSubmit()
+    {
+        Console.WriteLine("Submitted");
+
+        // Process the valid form
+    }
+
+
+}

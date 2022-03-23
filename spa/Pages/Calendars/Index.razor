@@ -1,0 +1,66 @@
+@page "/calendars"
+@using spa.Shared.Models
+@inject HttpClient Http
+@inject NavigationManager nav
+
+
+<PageTitle>Calendar</PageTitle>
+@if (Calendar == null)
+{
+    <div class="container">
+        <div class="row">
+            <img src="loading.gif">
+        </div>
+    </div>
+}
+else
+{
+    <div class="container">
+        <div class="row bg-light">
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Calendar Name</th>
+                        <th>Year</th>
+                        <th>Month</th>
+                        <th>Type</th>
+                        <th>No of Days</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Calendar)
+                    {
+                        <tr>
+                            <td>@item.CalendarName</td>
+                            <td>@item.year</td>
+                            <td>@item.year</td>
+                            <td>@item.CalendarType.ToString()</td>
+                            <td>@item.noOfEntries.ToString()</td>
+                            <td>
+                                <button class="btn btn-danger" @onclick="(() => ViewCalendar(item))">View</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
+
+@code {
+
+    private Calendar[]? Calendar;
+
+    protected override async Task OnInitializedAsync()
+    {
+        Calendar = await Http.GetFromJsonAsync<Calendar[]>("api/calendars");
+    }
+
+    protected void ViewCalendar(Calendar cal)
+    {
+        nav.NavigateTo(String.Format("Calendars/Edit/{0}",cal.Id));
+    }
+
+
+}

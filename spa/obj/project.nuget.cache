@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XK2VFnEx5k6h5wh87t75mDV9IFspiSHtq6uuPgMcdsWKbhMuiXwjrD6KYC3L4AxghtwARqEgjAXIkyat6W2aXQ==",
+  "dgSpecHash": "MIIINyu7uhbc4B8485x+VkGjGofdy+gE85P4XCkQuTqzJ68SMcb1L7ScKIj9qfegOIdGCwblUOzH0XBJbiOvcw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\holiday-calendar.spa.csproj",
+  "projectFilePath": "C:\\Users\\willo\\source\\repos\\holiday-calendar\\spa\\spa.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\willo\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.1\\microsoft.aspnetcore.authorization.6.0.1.nupkg.sha512",
     "C:\\Users\\willo\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.1\\microsoft.aspnetcore.components.6.0.1.nupkg.sha512",

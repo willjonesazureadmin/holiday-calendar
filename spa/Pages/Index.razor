@@ -1,32 +1,37 @@
 ﻿@page "/"
-@inject HttpClient Http
-
 @using spa.Shared.Models
+@inject HttpClient Http
+@inject NavigationManager nav
+
 
 <PageTitle>Calendar</PageTitle>
-@if(CalendarEntries == null)
+@if (CalendarEntries == null)
 {
-    <p><em>Loading...</em></p>
+        <div class="container">
+            <div class="row">
+                <img src="loading.gif">
+            </div>
+        </div>
 }
 else
 {
-<div class=container>
-    <div class="row">
-        @foreach(var ce in CalendarEntries)
-        {
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <div class="card">
-                     <button @onclick="@( e => Reveal(ce))">
-                    <img class="card-img" src="@ce.imageUrl" alt="...">
-                    <div class="card-img-overlay text-white d-flex justify-content-center align-items-end">
-                        <h1>@ce.dayNo.ToString()</h1>
+    <div class=container>
+        <div class="row">
+            @foreach (var ce in CalendarEntries)
+            {
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <button @onclick="@( e => Reveal(ce))">
+                            <img class="card-img" src="@ce.imageUrl" alt="...">
+                            <div class="card-img-overlay text-white d-flex justify-content-center align-items-end">
+                                <h1>@ce.dayNo.ToString()</h1>
+                            </div>
+                        </button>
                     </div>
-                    </button>
                 </div>
-            </div>
-        }
+            }
+        </div>
     </div>
-</div>
 }
 
 @code {
@@ -37,20 +42,29 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        Calendar = await Http.GetFromJsonAsync<Calendar[]>("api/calendars");
-        if(Calendar != null)
+        try
         {
-            CalendarEntries = await Http.GetFromJsonAsync<CalendarEntry[]>(String.Format("api/calendars/{0}/entries",Calendar.Last().Id));
+        Calendar = await Http.GetFromJsonAsync<Calendar[]>("api/calendars");
+        if (Calendar != null)
+        {
+            CalendarEntries = await
+            Http.GetFromJsonAsync<CalendarEntry[]>(String.Format("api/calendars/{0}/entries", Calendar.Last().Id));
 
         }
+        }
+        catch
+        {
+            nav.NavigateTo("/error");
+        }
+
 
     }
 
     private async void Reveal(CalendarEntry e)
     {
-            var ce = await Http.GetFromJsonAsync<CalendarEntry>(String.Format("api/entries/{0}/reveal",e.Id));
-            e.imageUrl = ce.imageUrl;    
-            this.StateHasChanged();
+        var ce = await Http.GetFromJsonAsync<CalendarEntry>(String.Format("api/entries/{0}/reveal", e.Id));
+        e.imageUrl = ce.imageUrl;
+        this.StateHasChanged();
     }
 
 

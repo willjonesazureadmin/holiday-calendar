@@ -28,7 +28,7 @@ namespace api
             builder.Services.AddDbContext<ReadWriteContext>(options => SqlServerDbContextOptionsExtensions.UseSqlServer(options, config.GetValue<string>("Values:SqldbConnectionString")));   
             StorageSharedKeyCredential credential = new StorageSharedKeyCredential(config.GetValue<string>("Values:PrivateStorage:AccountName"), config.GetValue<string>("Values:PrivateStorage:Key"));
             builder.Services.AddAzureClients(builder => {
-                builder.AddBlobServiceClient(new Uri(config.GetValue<string>("Values:PrivateStorage:ServiceUri")),credential);
+                builder.AddBlobServiceClient(new Uri(String.Format(config.GetValue<string>("Values:PrivateStorage:ServiceUri"), config.GetValue<string>("Values:PrivateStorage:AccountName"))),credential);
                 builder.UseCredential(new DefaultAzureCredential(includeInteractiveCredentials: true));
             });
         }

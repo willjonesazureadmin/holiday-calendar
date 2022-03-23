@@ -1,6 +1,6 @@
 using System;
 
-namespace holiday_calendar.spa.Shared.Models
+namespace spa.Shared.Models
 {
     public class CalendarEntry
     {

@@ -2,10 +2,30 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch and Debug Standalone Blazor WebAssembly App",
+            "name": "Functions Server",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:azureFunctions.pickProcess}",
+            "preLaunchTask": "functions start",           
+        },
+        {
+            "name": "Blazor Client",
             "type": "blazorwasm",
+            "request": "attach",
+            "cwd": "${workspaceFolder}/spa",
+        },
+        {
+            "name": "SWA Emulator Start",
+            "type": "PowerShell",
             "request": "launch",
-            "cwd": "${workspaceFolder}/holiday-calendar.spa"
+            "script": "Launcher/Launch.ps1",
+            "cwd": "${workspaceFolder}"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "SWA Launcher",
+            "configurations": ["Functions Server", "Blazor Client", "SWA Emulator Start"]
         }
     ]
 }
