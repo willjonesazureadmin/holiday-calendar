@@ -1,0 +1,113 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\will.jones\\repos\\holiday-calendar\\spa\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\will.jones\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\build-gz\\8GMsU+Hi.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\will.jones\\repos\\holiday-calendar\\spa\\obj\\Debug\\net6.0\\scopedcss\\bundle\\spa.styles.css",
+      "PackagePath": "staticwebassets\\spa.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\will.jones\\repos\\holiday-calendar\\spa\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\will.jones\\repos\\holiday-calendar\\spa\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\will.jones\\repos\\holiday-calendar\\spa\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\will.jones\\repos\\holiday-calendar\\spa\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\will.jones\\repos\\holiday-calendar\\spa\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\will.jones\\repos\\holiday-calendar\\spa\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\will.jones\\repos\\holiday-calendar\\spa\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\will.jones\\repos\\holiday-calendar\\spa\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\will.jones\\repos\\holiday-calendar\\spa\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\will.jones\\repos\\holiday-calendar\\spa\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\will.jones\\repos\\holiday-calendar\\spa\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\will.jones\\repos\\holiday-calendar\\spa\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\will.jones\\repos\\holiday-calendar\\spa\\wwwroot\\error.gif",
+      "PackagePath": "staticwebassets\\error.gif"
+    },
+    {
+      "Id": "C:\\Users\\will.jones\\repos\\holiday-calendar\\spa\\wwwroot\\error.jpg",
+      "PackagePath": "staticwebassets\\error.jpg"
+    },
+    {
+      "Id": "C:\\Users\\will.jones\\repos\\holiday-calendar\\spa\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\will.jones\\repos\\holiday-calendar\\spa\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\will.jones\\repos\\holiday-calendar\\spa\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\will.jones\\repos\\holiday-calendar\\spa\\wwwroot\\loading.gif",
+      "PackagePath": "staticwebassets\\loading.gif"
+    },
+    {
+      "Id": "C:\\Users\\will.jones\\repos\\holiday-calendar\\spa\\wwwroot\\pending.png",
+      "PackagePath": "staticwebassets\\pending.png"
+    },
+    {
+      "Id": "C:\\Users\\will.jones\\repos\\holiday-calendar\\spa\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.spa.props",
+      "PackagePath": "build\\spa.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.spa.props",
+      "PackagePath": "buildMultiTargeting\\spa.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.spa.props",
+      "PackagePath": "buildTransitive\\spa.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.spa.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

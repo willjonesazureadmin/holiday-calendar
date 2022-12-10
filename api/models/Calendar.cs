@@ -1,24 +1,27 @@
 using System;
-using System.IO;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
-using Azure.Storage.Blobs;
+using System.Collections.Generic;
+
 
 namespace api.models
 {
     public class Calendar
     {
-        public Guid Id { get; set; }
-        public String CalendarName { get; set; }
-        public String ContainerName
+        public Guid id { get; set; }
+        public string containerName
         {
             get
             {
-                return Id.ToString();
+                return id.ToString();
             }
         }
-        public CalendarType CalendarType { get; set; }
+        public String calendarName { get {
+            return calendarType.ToString() + " " + month.ToString() + " " + year.ToString();
+        } }
+        public CalendarType calendarType { get; set; }
+
+        public DateTime calendarDate { get {
+            return new DateTime(this.year, this.month, 1);
+        }}
 
         public int month { get; private set; }
 
@@ -26,64 +29,54 @@ namespace api.models
 
         public int noOfEntries { get; private set; }
 
-        public String TooEarlyReference { get; set; }
-        public String DefaultReference { get; set; }
+        public String tooEarlyReference { get; set; }
+        public String defaultReference { get; set; }
 
-        public String MissingReference { get; set; }
+        public String missingReference { get; set; }
 
         public Calendar()
         {
         }
 
-        public Calendar(int days, int month, int year, CalendarType _CalendarType)
+        public Calendar(int noOfEntries, int month, int year, CalendarType _CalendarType, string TooEarlyReference, string DefaultReference, string MissingReference, Guid id)
         {
-            this.CalendarName = _CalendarType.ToString() + " " + month.ToString() + " " + year.ToString();
-            this.CalendarType = _CalendarType;
+            this.calendarType = _CalendarType;
             this.month = month;
-            this.year = year;
-            this.noOfEntries = days;
+            this.year =year;
+            this.noOfEntries = noOfEntries;
+            this.tooEarlyReference = TooEarlyReference;
+            this.missingReference = MissingReference;
+            this.defaultReference = DefaultReference;
+            this.id = id;
         }
 
-        public async Task UploadImage(BlobServiceClient _client, string imageType, Stream content, string contentType)
+        public Calendar(IDictionary<string, string> metadata)
         {
-            var enumImageType = (ImageType)Enum.Parse(typeof(ImageType), imageType);
-            var blobName = this.Id + imageType + "." + contentType.Split('/').Last();
-            BlobContainerClient _containerClient = _client.GetBlobContainerClient(this.ContainerName);
-            _containerClient.CreateIfNotExists();
-            IProgress<long> ph = new Progress<long>(progress =>
-            {
-                Console.WriteLine(progress.ToString());
-            });
-            content.Position = 0;
-            var _blobclient = _containerClient.GetBlobClient(blobName);
-            await _blobclient.UploadAsync(content, null, null, null, progressHandler: ph);
-
-            switch (enumImageType)
-            {
-                case ImageType.TooEarly:
-                    this.TooEarlyReference = blobName;
-                    break;
-                case ImageType.Default:
-                    this.DefaultReference = blobName;
-                    break;
-                case ImageType.Missing:
-                    this.MissingReference = blobName;
-                    break;
-            }
-
+            this.noOfEntries =  int.Parse(metadata[nameof(Calendar.noOfEntries)]);
+            this.month = int.Parse(metadata[nameof(Calendar.month)]);
+            this.year = int.Parse(metadata[nameof(Calendar.year)]);
+            this.calendarType = (CalendarType)Enum.Parse(typeof(CalendarType), metadata[nameof(Calendar.calendarType)]);
+            this.tooEarlyReference = metadata[nameof(Calendar.tooEarlyReference)];
+            this.missingReference = metadata[nameof(Calendar.missingReference)];
+            this.defaultReference = metadata[nameof(Calendar.defaultReference)];
+            this.id = Guid.Parse(metadata[nameof(Calendar.id)]);
         }
 
-        public void GetImages(BlobServiceClient _client)
+        public IDictionary<string,string> GetMetaData()
         {
-            BlobContainerClient _blobclient = _client.GetBlobContainerClient(this.ContainerName);
-            if(this.TooEarlyReference != null && this.TooEarlyReference != "") this.TooEarlyReference = _blobclient.GetBlobClient(TooEarlyReference).GenerateSasUri(Azure.Storage.Sas.BlobSasPermissions.Read, DateTimeOffset.Now.AddMinutes(1)).AbsoluteUri.ToString(); else {this.TooEarlyReference = "pending.png";}
-            if(this.DefaultReference != null && this.DefaultReference != "") this.DefaultReference = _blobclient.GetBlobClient(DefaultReference).GenerateSasUri(Azure.Storage.Sas.BlobSasPermissions.Read, DateTimeOffset.Now.AddMinutes(1)).AbsoluteUri.ToString();  else {this.DefaultReference = "pending.png";}
-            if(this.MissingReference != null && this.MissingReference != "") this.MissingReference = _blobclient.GetBlobClient(MissingReference).GenerateSasUri(Azure.Storage.Sas.BlobSasPermissions.Read, DateTimeOffset.Now.AddMinutes(1)).AbsoluteUri.ToString();  else {this.MissingReference = "pending.png";}
-
-
-
+            Dictionary<string, string> metadata = new Dictionary<string, string>();
+            metadata.Add("noOfEntries", noOfEntries.ToString());
+            metadata.Add("month", month.ToString());
+            metadata.Add("year", year.ToString());
+            metadata.Add("calendarType", calendarType.ToString());
+            metadata.Add("tooEarlyReference", tooEarlyReference);
+            metadata.Add("defaultReference", defaultReference);
+            metadata.Add("missingReference", missingReference);
+            metadata.Add("id", id.ToString());
+            return metadata;
         }
 
+       
     }
 
 

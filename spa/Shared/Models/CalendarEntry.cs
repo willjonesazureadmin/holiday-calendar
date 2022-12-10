@@ -4,12 +4,29 @@ namespace spa.Shared.Models
 {
     public class CalendarEntry
     {
-        public Guid CalendarId {get; set;}
-        public Guid Id { get; set; }
-        public string dayNo { get; set; }
-        public DateTime dateTime { get; set; }
+        public Guid filePrefix { get; set; }
+
+        public string fileContent { get; set; }
+
+        public string fileExtension { get; set; }
+
+        public string fileReference { get; set; }
+        public DateTime allowedDate { get; set; }
+        public int month { get; set; }
+
+        public int year { get; set; }
+
+        public int day { get; set; }
+
+        public ImageType imageType { get; set; }
+
+        public string containerName { get; set; }
 
         public string imageUrl { get; set; }
-        public int Score { get; set; }
+
+        public CalendarEntry()
+        {
+            this.imageUrl = "/loading.gif";
+        }
     }
 }

@@ -17,81 +17,117 @@
     else
     {
         <div class="row">
-            <h2>@cal.CalendarName</h2>
-            <EditForm Model="@cal" OnValidSubmit="@HandleValidSubmit">
-                <DataAnnotationsValidator />
-                <ValidationSummary />
+            <div class="col-lg-6">
+                <h2>@cal.calendarName</h2>
+                <EditForm Model="@cal" OnValidSubmit="@HandleValidSubmit">
+                    <DataAnnotationsValidator />
+                    <ValidationSummary />
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>
+                                Calendar Name
+                                <InputText class="form-control" id="CalendarName" @bind-Value="cal.calendarName" />
+                            </Label>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>
+                                Calendar Type:
+                                <InputSelect @bind-Value="cal.calendarType" class="form-control">
+                                    <option value="">Select Type ...</option>
+                                    @foreach (var item in Enum.GetValues(typeof(CalendarType)))
+                                    {
+                                    <option value="@item">@item</option>
+                                    }
+                            </InputSelect>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-row">
+
+                    <div class="form-group col-md-4">
+                        <label>
+                            Month
+                            <InputNumber class="form-control" id="month" @bind-Value="cal.month" />
+                        </label>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>
+                            Year
+                            <InputNumber class="form-control" id="year" @bind-Value="cal.year" />
+                        </label>
+                    </div>
+                </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label>
-                            Calendar Name
-                            <InputText class="form-control" id="CalendarName" @bind-Value="cal.CalendarName" />
-                        </Label>
+                            No of Entries
+                            <InputNumber class="form-control" id="entries" @bind-Value="cal.noOfEntries" />
+                        </label>
                     </div>
-                    <div class="form-group col-md-6">
-                        <label>
-                            Calendar Type:
-                            <InputSelect @bind-Value="cal.CalendarType" class="form-control">
-                                <option value="">Select Type ...</option>
-                                @foreach (var item in Enum.GetValues(typeof(CalendarType)))
-                                {
-                                <option value="@item">@item</option>
-                                }
-                        </InputSelect>
-                    </label>
-                </div>
-            </div>
-            <div class="form-row">
-
-                <div class="form-group col-md-4">
-                    <label>
-                        Month
-                        <InputNumber class="form-control" id="month" @bind-Value="cal.month" />
-                    </label>
-                </div>
-                <div class="form-group col-md-4">
-                    <label>
-                        Year
-                        <InputNumber class="form-control" id="year" @bind-Value="cal.year" />
-                    </label>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label>
-                        No of Entries
-                        <InputNumber class="form-control" id="entries" @bind-Value="cal.noOfEntries" />
-                    </label>
-                </div>
-                <div class="form-group col-md-4">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-                </div>
-        </EditForm>
+                    <div class="form-group col-md-4">
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
+                </div>
+            </EditForm>
+        </div>
+        <div class="col-lg-6">
+            <EditForm Model="@imageBrowser">
+                <div class="row">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>
+                                Image:
+                                <InputSelect @bind-Value="imageBrowser.inputSelectDayNo" @oninput="GetCalendarEntryImage" class="form-control">
+                                    <option value="">Select Day ...</option>
+                                    @for (int i = 1; i <= cal.noOfEntries; i++)
+                                        {
+                                        <option value="@i">@i</option>
+                                        }
+                                </InputSelect>
+                            </label>
+                            <div class="card">
+                                <img class="card-img" src="@imageBrowser.selectedImageReference" alt="...">
+                                <p />
+                                <InputFile OnChange="@( e => UploadNewImage(e, cal, imageBrowser.inputSelectDayNo))"
+                                    class="btn btn-primary" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </EditForm>
+        </div>
+    </div>
 
         <p />
 
         <div class="row">
             <div class="col-md-12 col-lg-4">
+                <h2>Default Placeholder</h2>
                 <div class="card">
-                    <img class="card-img" src="@cal.DefaultReference" alt="...">
+                    <img class="card-img" src="@defaultReferenceUrl" alt="...">
                     <p />
-                    <InputFile OnChange="@( e => LoadFiles(e, cal, ImageType.Default.ToString()))"
-                        class="btn btn-primary" />
+                    <InputFile OnChange="@( e => UploadNewPlaceholder(e, cal, ImageType.Default.ToString()))"
+                    class="btn btn-primary" />
                 </div>
             </div>
             <div class="col-md-12 col-lg-4">
+                <h2>Missing Placeholder</h2>
                 <div class="card">
-                    <img class="card-img" src="@cal.MissingReference" alt="...">
+                    <img class="card-img" src="@missingReferenceUrl" alt="...">
+                    <InputFile OnChange="@( e => UploadNewPlaceholder(e, cal, ImageType.Missing.ToString()))"
+                    class="btn btn-primary" />
                 </div>
             </div>
             <div class="col-md-12 col-lg-4">
+                <h2>Too Early Placeholder</h2>
                 <div class="card">
-                    <img class="card-img" src="@cal.TooEarlyReference" alt="...">
+                    <img class="card-img" src="@tooEarlyUrl" alt="...">
+                    <InputFile OnChange="@( e => UploadNewPlaceholder(e, cal, ImageType.TooEarly.ToString()))"
+                    class="btn btn-primary" />
                 </div>
             </div>
         </div>
+
     }
 </div>
 @code {
@@ -99,6 +135,14 @@
     [Parameter]
     public string? calendarId { get; set; }
     public Calendar cal = new Calendar();
+    public string tooEarlyUrl { get; set; }
+    public string missingReferenceUrl { get; set; }
+
+    public string defaultReferenceUrl { get; set; }
+
+    public ImageBrowser imageBrowser = new ImageBrowser();
+
+
 
 
     protected override async Task OnInitializedAsync()
@@ -106,6 +150,23 @@
         try
         {
             cal = await Http.GetFromJsonAsync<Calendar>(String.Format("api/calendars/{0}", calendarId));
+            if (cal != null)
+            {
+                try
+                {
+                    this.tooEarlyUrl = await GetCalendarPlaceholderImage(calendarId, ImageType.TooEarly.ToString());
+                    this.defaultReferenceUrl = await GetCalendarPlaceholderImage(calendarId, ImageType.Default.ToString());
+                    this.missingReferenceUrl = await GetCalendarPlaceholderImage(calendarId, ImageType.Missing.ToString());
+                }
+                catch
+                {
+                    nav.NavigateTo("/Error");
+                }
+            }
+            else
+            {
+                nav.NavigateTo("/NotFound");
+            }
         }
         catch
         {
@@ -113,7 +174,36 @@
         }
     }
 
-    private async void LoadFiles(InputFileChangeEventArgs e, Calendar c, string i)
+
+    private async Task GetCalendarEntryImage(ChangeEventArgs e)
+    {
+        try
+        {
+                        Console.WriteLine($"Trying to get image");
+            this.imageBrowser.selectedImageReference = await Http.GetStringAsync(String.Format("api/calendars/{0}/entries/{1}/actual", this.calendarId, e.Value.ToString()));
+        }
+        catch
+        {
+            Console.WriteLine($"Failed to get image");
+            this.imageBrowser.selectedImageReference = "/error.jpg";
+        }
+    }
+
+    private async Task<string> GetCalendarPlaceholderImage(string calendarId, string imageType)
+    {
+        try
+        {
+            return await Http.GetStringAsync(String.Format("api/calendars/{0}/placeholders/{1}/image", calendarId,
+            imageType.ToString()));
+        }
+        catch
+        {
+            Console.WriteLine($"Failed to get image {imageType.ToString()}");
+            return "/error.jpg";
+        }
+    }
+
+    private async void UploadNewPlaceholder(InputFileChangeEventArgs e, Calendar c, string i)
     {
         var fileContent =
         new StreamContent(e.File.OpenReadStream(maxAllowedSize: 10000000));
@@ -123,10 +213,41 @@
 
         try
         {
-            var u = String.Format("api/calendars/{0}/image/{1}/$value", c.Id, i);
-            Console.WriteLine(String.Format("Uploading Files to {0}", u));
+            var u = String.Format("api/calendars/{0}/placeholders/{1}/$value", c.id, i);
+            Console.WriteLine(String.Format("Uploading Placeholder to {0} {1}", u, i));
 
             var r = await Http.PatchAsync(u, fileContent);
+                        @* this.imageBrowser.selectedImageReference = "/loading.gif";
+              await Task.Delay(3000);
+            await GetCalendarPlaceholderImage(calendarId, i); *@
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
+
+    }
+
+    private async void UploadNewImage(InputFileChangeEventArgs e, Calendar c, int i)
+    {
+        var fileContent =
+        new StreamContent(e.File.OpenReadStream(maxAllowedSize: 10000000));
+
+        fileContent.Headers.ContentType =
+        new MediaTypeHeaderValue(e.File.ContentType);
+
+        try
+        {
+            var u = String.Format("api/calendars/{0}/entries/{1}/$value", c.id, i.ToString());
+            Console.WriteLine(String.Format("Uploading new Image Files to {0} {1}", u, i.ToString()));
+
+            var r = await Http.PatchAsync(u, fileContent);
+            this.imageBrowser.selectedImageReference = "/loading.gif";
+            this.StateHasChanged();
+            await Task.Delay(3000);
+            this.imageBrowser.selectedImageReference = await Http.GetStringAsync(String.Format("api/calendars/{0}/entries/{1}/actual", this.calendarId, i));
+            this.StateHasChanged();
+
         }
         catch (Exception ex)
         {
@@ -139,6 +260,12 @@
         Console.WriteLine("Submitted");
 
         // Process the valid form
+    }
+
+    public class ImageBrowser
+    {
+        public int inputSelectDayNo { get; set; }
+        public string selectedImageReference { get; set; }
     }
 
 

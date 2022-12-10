@@ -32,10 +32,10 @@ else
                     @foreach (var item in Calendar)
                     {
                         <tr>
-                            <td>@item.CalendarName</td>
+                            <td>@item.calendarName</td>
                             <td>@item.year</td>
                             <td>@item.year</td>
-                            <td>@item.CalendarType.ToString()</td>
+                            <td>@item.calendarType.ToString()</td>
                             <td>@item.noOfEntries.ToString()</td>
                             <td>
                                 <button class="btn btn-danger" @onclick="(() => ViewCalendar(item))">View</button>
@@ -59,7 +59,7 @@ else
 
     protected void ViewCalendar(Calendar cal)
     {
-        nav.NavigateTo(String.Format("Calendars/Edit/{0}",cal.Id));
+        nav.NavigateTo(String.Format("Calendars/Edit/{0}",cal.id));
     }
 
 

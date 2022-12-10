@@ -4,13 +4,15 @@ namespace api.models
 {
     public enum CalendarType
     {
-        Advant,
+        Advent,
         Easter
     }
 
     public enum ImageType{
         TooEarly,
         Default,
-        Missing
+        Missing,
+
+        None
     }
 }

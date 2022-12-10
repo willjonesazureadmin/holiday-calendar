@@ -5,13 +5,13 @@
 
 
 <PageTitle>Calendar</PageTitle>
-@if (CalendarEntries == null)
+@if (Calendars.Count > 1)
 {
-        <div class="container">
-            <div class="row">
-                <img src="loading.gif">
-            </div>
+    <div class="container">
+        <div class="row">
+            <img src="loading.gif">
         </div>
+    </div>
 }
 else
 {
@@ -19,12 +19,12 @@ else
         <div class="row">
             @foreach (var ce in CalendarEntries)
             {
-                <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="col-xs-12 col-md-6 col-lg-4">
                     <div class="card">
                         <button @onclick="@( e => Reveal(ce))">
                             <img class="card-img" src="@ce.imageUrl" alt="...">
                             <div class="card-img-overlay text-white d-flex justify-content-center align-items-end">
-                                <h1>@ce.dayNo.ToString()</h1>
+                                <h1>@ce.day.ToString()</h1>
                             </div>
                         </button>
                     </div>
@@ -36,21 +36,38 @@ else
 
 @code {
 
-    private CalendarEntry[]? CalendarEntries;
+    private List<CalendarEntry> CalendarEntries = new List<CalendarEntry>();
 
-    private Calendar[]? Calendar;
+    private List<Calendar> Calendars = new List<Calendar>();
 
     protected override async Task OnInitializedAsync()
     {
         try
         {
-        Calendar = await Http.GetFromJsonAsync<Calendar[]>("api/calendars");
-        if (Calendar != null)
-        {
-            CalendarEntries = await
-            Http.GetFromJsonAsync<CalendarEntry[]>(String.Format("api/calendars/{0}/entries", Calendar.Last().Id));
-
-        }
+            Calendars = await Http.GetFromJsonAsync<List<Calendar>>("api/calendars");
+            if (Calendars.Count > 0)
+            {
+                try
+                {
+                    CalendarEntries = await Http.GetFromJsonAsync<List<CalendarEntry>>(String.Format("api/calendars/{0}/entries",
+                    Calendars.Last().id));
+                    CalendarEntries = CalendarEntries.OrderBy(p => p.allowedDate).ToList();
+                    foreach (var ce in CalendarEntries)
+                    {
+                        var u = await Http.GetStringAsync(String.Format("api/calendars/{0}/entries/{1}/default", Calendars.Last().id, ce.day));
+                        Console.WriteLine(u);
+                        ce.imageUrl = u;
+                        StateHasChanged();
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+            }
+            else
+            {
+            }
         }
         catch
         {
@@ -61,10 +78,11 @@ else
     }
 
     private async void Reveal(CalendarEntry e)
-    {
-        var ce = await Http.GetFromJsonAsync<CalendarEntry>(String.Format("api/entries/{0}/reveal", e.Id));
-        e.imageUrl = ce.imageUrl;
-        this.StateHasChanged();
+    {       
+        var ce = await Http.GetStringAsync(String.Format("api/calendars/{0}/entries/{1}/reveal",
+        Calendars.Last().id, e.day));
+        e.imageUrl = ce;
+        StateHasChanged();
     }
 
 

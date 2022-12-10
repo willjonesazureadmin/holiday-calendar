@@ -1,14 +1,11 @@
 using System;
 using System.IO;
-using api.models;
-using Azure.Identity;
 using Azure.Storage;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.SqlServer;
 using Microsoft.Extensions.Azure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Azure.Identity;
 
 [assembly: FunctionsStartup(typeof(api.Startup))]
 
@@ -25,7 +22,6 @@ namespace api
             .AddEnvironmentVariables()
             .Build();
             
-            builder.Services.AddDbContext<ReadWriteContext>(options => SqlServerDbContextOptionsExtensions.UseSqlServer(options, config.GetValue<string>("Values:SqldbConnectionString")));   
             StorageSharedKeyCredential credential = new StorageSharedKeyCredential(config.GetValue<string>("Values:PrivateStorage:AccountName"), config.GetValue<string>("Values:PrivateStorage:Key"));
             builder.Services.AddAzureClients(builder => {
                 builder.AddBlobServiceClient(new Uri(String.Format(config.GetValue<string>("Values:PrivateStorage:ServiceUri"), config.GetValue<string>("Values:PrivateStorage:AccountName"))),credential);

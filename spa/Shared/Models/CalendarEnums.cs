@@ -4,13 +4,14 @@ namespace spa.Shared.Models
 {
     public enum CalendarType
     {
-        Advant,
+        Advent,
         Easter
     }
 
     public enum ImageType{
         TooEarly,
         Default,
-        Missing
+        Missing,
+        None
     }
 }

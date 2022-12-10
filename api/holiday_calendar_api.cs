@@ -9,17 +9,14 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using api.models;
 using System.Collections.Generic;
-using Microsoft.Azure.Functions.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.EntityFrameworkCore;
 using Azure.Storage.Blobs;
 using Microsoft.Extensions.Configuration;
 using System.Linq;
-using Azure.Storage.Sas;
 using SixLabors.ImageSharp.Processing;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Formats;
-using System.Reflection;
+using Azure.Storage.Blobs.Models;
+using Azure;
 
 namespace api
 {
@@ -27,33 +24,38 @@ namespace api
 
     public class holiday_calendar_api
     {
-        private readonly BlobServiceClient _blobServiceClient;
-        private readonly ReadWriteContext _readwritecontext;
+        private readonly BlobServiceClient _storageServiceClient;
 
-        public holiday_calendar_api(ReadWriteContext readwritecontext, BlobServiceClient blobServiceClient, IConfiguration configuration)
+        public holiday_calendar_api(BlobServiceClient blobServiceClient, IConfiguration configuration)
         {
-            this._readwritecontext = readwritecontext;
-            this._blobServiceClient = blobServiceClient;
+            this._storageServiceClient = blobServiceClient;
         }
         [FunctionName("holiday_calendar_get")]
         public IActionResult hc_get(
             [HttpTrigger(AuthorizationLevel.Function, "get", Route = "calendars")] HttpRequest req, ILogger log)
         {
             log.LogInformation("Get Calendar Requested");
-            var calendar = GetCalendar();
-            return new OkObjectResult(calendar);
+            try
+            {
+                var calendars = GetCalendars();
+                return new OkObjectResult(calendars);
+            }
+            catch
+            {
+                return new BadRequestObjectResult(null);
+            }
+
         }
 
         [FunctionName("holiday_calendar_get_id")]
-        public async Task<IActionResult> hc_get_id(
-            [HttpTrigger(AuthorizationLevel.Function, "get", Route = "calendars/{id}")] HttpRequest req, Guid Id, ILogger log)
+        public IActionResult hc_get_id(
+            [HttpTrigger(AuthorizationLevel.Function, "get", Route = "calendars/{calendarId}")] HttpRequest req, Guid calendarId, ILogger log)
         {
             log.LogInformation("Get Calendar By Id Requested");
-            var c = await GetCalendar(Id);
+            var c = GetCalendarById(calendarId);
 
             if (c != null)
             {
-                c.GetImages(this._blobServiceClient);
                 return new OkObjectResult(c);
             }
             return new NotFoundObjectResult(null);
@@ -70,17 +72,72 @@ namespace api
                 requestBody = await streamReader.ReadToEndAsync();
             }
             dynamic data = JsonConvert.DeserializeObject(requestBody);
-            int days = data?.noOfEntries;
-            int month = data?.month;
-            int year = data?.year;
-            CalendarType type = data?.calendarType;
-            var calendar = CreateCalendar(type, days, month, year);
-            return new OkObjectResult(calendar);
+            string noe = data?.noOfEntries;
+            string month = data?.month;
+            string year = data?.year;
+            string calType = data?.calendarType;
+            var c = AddCalendar(noe, month, year, calType);
+            return new OkObjectResult(c);
         }
 
-        [FunctionName("holiday_calendar_patch_image")]
-        public async Task<IActionResult> hc_patch_image_update_reference(
-            [HttpTrigger(AuthorizationLevel.Function, "patch", Route = "calendars/{id}/image/{imageType}/$value")] HttpRequest req, Guid id, string imageType, ILogger log)
+
+        [FunctionName("holiday_calendar_get_calendar_entry_by_id")]
+        public IActionResult holiday_calendar_get_calendar_entry_by_id(
+                          [HttpTrigger(AuthorizationLevel.Function, "get", Route = "calendars/{calendarId}/entries")] HttpRequest req, Guid calendarId, ILogger log)
+        {
+            log.LogInformation("Get All Calendar Images");
+
+            try
+            {
+                var c = GetCalendarById(calendarId);
+                {
+                    if (c != null)
+                    {
+                        List<CalendarEntry> cel = GetCalendarEntriesByCalendarId(c, ImageType.None);
+                        return new OkObjectResult(cel);
+                    }
+                    else
+                    {
+                        return new NotFoundObjectResult(null);
+                    }
+                }
+
+            }
+            catch
+            {
+                return new BadRequestObjectResult(null);
+            }
+        }
+
+      [FunctionName("holiday_calendar_placeholder_get_image")]
+        public IActionResult holiday_calendar_placeholder_get_image(
+            [HttpTrigger(AuthorizationLevel.Function, "get", Route = "calendars/{calendarId}/placeholders/{imageType}/image")] HttpRequest req, Guid calendarId, string imageType, ILogger log)
+        {
+            log.LogInformation("Calendar Placeholder Image URL Requested");
+            var c = GetCalendarById(calendarId);
+            if (c != null)
+            {
+                var it = (ImageType)Enum.Parse(typeof(ImageType), imageType);
+                var ce = GetCalendarImageByType(c, it, "", false);
+                if(ce != null)
+                {
+                return new OkObjectResult(GetImageSAS(ce));
+                }
+                else
+                {
+                    return new NotFoundObjectResult(null);
+                }
+            }
+            else
+            {
+                return new NotFoundObjectResult(null);
+            }
+
+        }
+
+        [FunctionName("holiday_calendar_patch_placeholder_images")]
+        public async Task<IActionResult> holiday_calendar_patch_placeholder_images(
+            [HttpTrigger(AuthorizationLevel.Function, "patch", "post", Route = "calendars/{calendarId}/placeholders/{imageType}/$value")] HttpRequest req, Guid calendarId, string imageType, ILogger log)
         {
             log.LogInformation("Calendar Image Update Reference Requested");
             string contentType = req.ContentType;
@@ -92,11 +149,159 @@ namespace api
             if (contentType == "image/jpeg" || contentType == "image/png" || contentType == "image/bmp" || contentType == "image/gif")
             {
 
-
+                var it = (ImageType)Enum.Parse(typeof(ImageType), imageType);
                 IImageFormat format;
-                var c = await GetCalendar(id);
+                var c = GetCalendarById(calendarId);
                 if (c != null)
                 {
+                    var ce = GetCalendarImageByType(c, it, contentType, true);
+                    if (ce != null)
+                    {
+                        uploadStream.Position = 0;
+                        using (var image = Image.Load(uploadStream, out format))
+                        {                 
+
+                            image.Mutate(x => x.Resize(600, 600, KnownResamplers.Lanczos3));
+                            image.Save(resizeStream, format);
+                        }
+                        UploadImage(ce, resizeStream);
+                        c = UpdateImageReference(c, it, ce.fileReference);
+
+                        return new OkObjectResult(ce);
+                    }
+                    else return null;
+                }
+            }
+
+            return new NotFoundObjectResult(null);
+        }
+
+
+
+
+        [FunctionName("holiday_calendar_entry_get_by_id")]
+        public IActionResult hce_get_id(
+            [HttpTrigger(AuthorizationLevel.Function, "get", Route = "calendars/{calendarId}/entries/{dayno}")] HttpRequest req, Guid calendarId, int dayno, ILogger log)
+        {
+            try
+            {
+                var c = GetCalendarById(calendarId);
+                {
+                    if (c != null)
+                    {
+                        var ce = GetCalendarEntryByDayTag(c, c.containerName, dayno, null, false);
+                        if (ce != null)
+                        {
+                            return new OkObjectResult(ce);
+                        }
+                        else
+                        {
+                            return new NotFoundObjectResult(null);
+                        }
+
+                    }
+                    else
+                    {
+                        return new NotFoundObjectResult(null);
+                    }
+                }
+
+            }
+            catch
+            {
+                return new BadRequestObjectResult(null);
+            }
+        }
+
+        [FunctionName("holiday_calendar_entry_reveal")]
+        public IActionResult hce_reveal_image_reveal(
+            [HttpTrigger(AuthorizationLevel.Function, "get", Route = "calendars/{calendarId}/entries/{dayno}/reveal")] HttpRequest req, Guid calendarId, int dayno, ILogger log)
+        {
+            log.LogInformation("Calendar Image Reveal URL Requested");
+            var c = GetCalendarById(calendarId);
+            if (c != null)
+            {
+                var ce = GetCalendarEntryByDayTag(c, c.containerName, dayno, null, false);
+                if(ce != null)
+                {
+                return new OkObjectResult(Reveal(c, ce, dayno));
+                }
+                else
+                {
+                    return new NotFoundObjectResult(null);
+                }
+            }
+            else
+            {
+                return new NotFoundObjectResult(null);
+            }
+
+        }
+
+        [FunctionName("holiday_calendar_entry_actual")]
+        public IActionResult hce_reveal_image_actual(
+            [HttpTrigger(AuthorizationLevel.Function, "get", Route = "calendars/{calendarId}/entries/{dayno}/actual")] HttpRequest req, Guid calendarId, int dayno, ILogger log)
+        {
+            log.LogInformation("Calendar Image actual URL Requested");
+            var c = GetCalendarById(calendarId);
+            if (c != null)
+            {
+                var ce = GetCalendarEntryByDayTag(c, c.containerName, dayno, null, false);
+                if(ce != null)
+                {
+                return new OkObjectResult(GetImageSAS(ce));
+                }
+                else
+                {
+                    return new NotFoundObjectResult(null);
+                }
+            }
+            else
+            {
+                return new NotFoundObjectResult(null);
+            }
+
+        }
+
+        [FunctionName("holiday_calendar_entry_default")]
+        public IActionResult holiday_calendar_entry_default(
+    [HttpTrigger(AuthorizationLevel.Function, "get", Route = "calendars/{calendarId}/entries/{dayno}/default")] HttpRequest req, Guid calendarId, int dayNo, ILogger log)
+        {
+            log.LogInformation("Calendar Image Default URL Requested");
+            var c = GetCalendarById(calendarId);
+            var ce = GetCalendarEntryByDayTag(c, c.containerName, dayNo, null, false);
+            if (c != null)
+            {
+                return new OkObjectResult(Default(c, ce, dayNo));
+            }
+            else
+            {
+                return new NotFoundObjectResult(null);
+            }
+
+        }
+
+
+        [FunctionName("holiday_calendar_entry_patch_image")]
+        public async Task<IActionResult> holiday_calendar_entry_patch_image(
+            [HttpTrigger(AuthorizationLevel.Function, "patch","post", Route = "calendars/{calendarId}/entries/{dayno}/$value")] HttpRequest req, Guid calendarId, int dayNo, ILogger log)
+        {
+            log.LogInformation("Calendar Entry Image Update Requested");
+            string contentType = req.ContentType;
+            Stream uploadStream = new MemoryStream();
+            Stream resizeStream = new MemoryStream();
+            await req.Body.CopyToAsync(uploadStream);
+
+
+            if (contentType == "image/jpeg" || contentType == "image/png" || contentType == "image/bmp" || contentType == "image/gif")
+            {
+
+
+                IImageFormat format;
+                var c = GetCalendarById(calendarId);
+                if (c != null)
+                {
+                    var ce = GetCalendarEntryByDayTag(c, c.containerName, dayNo, contentType, true);
                     uploadStream.Position = 0;
                     using (var image = Image.Load(uploadStream, out format))
                     {
@@ -104,176 +309,277 @@ namespace api
                         image.Mutate(x => x.Resize(480, 480));
                         image.Save(resizeStream, format);
                     }
-                    await c.UploadImage(_blobServiceClient, imageType, resizeStream, contentType);
-                    _readwritecontext.Entry(c).State = EntityState.Modified;
-                    _readwritecontext.SaveChanges();
-                    return new OkObjectResult(c);
-                }
-                else return null;
-
-            }
-
-            return new NotFoundObjectResult(null);
-        }
-
-        [FunctionName("holiday_calendar_add_entries")]
-        public async Task<IActionResult> hce_add(
-            [HttpTrigger(AuthorizationLevel.Function, "post", Route = "calendars/{id}/entries")] HttpRequest req, Guid Id, ILogger log)
-        {
-            var calendar = await CreateCalendarEntriesAsync(Id);
-            return new OkObjectResult(calendar);
-        }
-
-        [FunctionName("holiday_calendar_get_entries")]
-        public async Task<IActionResult> hce_get(
-            [HttpTrigger(AuthorizationLevel.Function, "get", Route = "calendars/{id}/entries")] HttpRequest req, Guid id, ILogger log)
-        {
-            log.LogInformation("Calendar Entries Requested By Calendar Id");
-            var calendarEntry = await GetCalenderEntryByCalendarId(id);
-            return new OkObjectResult(calendarEntry);
-        }
-
-        [FunctionName("holiday_calendar_entry_get_by_id")]
-        public async Task<IActionResult> hce_get_id(
-            [HttpTrigger(AuthorizationLevel.Function, "get", Route = "entries/{id}")] HttpRequest req, Guid id, ILogger log)
-        {
-            log.LogInformation("Calendar Entry Requested");
-            var calendarEntry = await GetCalenderEntry(id);
-            return new OkObjectResult(calendarEntry);
-        }
-
-        [FunctionName("holiday_calendar_entry_reveal")]
-        public async Task<IActionResult> hce_reveal_image_reveal(
-            [HttpTrigger(AuthorizationLevel.Function, "get", Route = "entries/{id}/reveal")] HttpRequest req, Guid id, ILogger log)
-        {
-            log.LogInformation("Calendar Image Reveal URL Requested");
-            var ce = await RevealCalendarEntry(id);
-            if (ce.Id != Guid.Empty)
-            {
-                return new OkObjectResult(ce);
-            }
-            return new NotFoundObjectResult(null);
-
-        }
-
-
-        [FunctionName("holiday_calendar_entry_patch_image")]
-        public async Task<IActionResult> hce_patch_image(
-            [HttpTrigger(AuthorizationLevel.Function, "patch", Route = "entries/{id}/image/$value")] HttpRequest req, Guid id, ILogger log)
-        {
-            log.LogInformation("Calendar Entry Image Update Requested");
-            string contentType = req.ContentType;
-            Stream uploadStream = new MemoryStream();
-
-            await req.Body.CopyToAsync(uploadStream);
-            if (contentType == "image/jpeg" || contentType == "image/png")
-            {
-                var ce = await GetCalenderEntry(id);
-                var c = await GetCalendar(ce.CalendarId);
-                if (ce.Id != null)
-                {
-                    ce.UploadImage(_blobServiceClient, uploadStream, c.ContainerName);
-                    _readwritecontext.Entry(ce).State = EntityState.Modified;
-                    _readwritecontext.SaveChanges();
+                    UploadImage(ce, resizeStream);
                     return new OkObjectResult(ce);
-                }
-                else return null;
-            }
-            else
-            {
-                return new NotFoundObjectResult(null);
-            }
-        }
 
-        private async Task<Calendar> GetCalendar(Guid Id)
-        {
-            var c = await _readwritecontext.Calendar.Where(c => c.Id == Id).FirstOrDefaultAsync();
-            return c;
-        }
-
-        private List<Calendar> GetCalendar()
-        {
-            var c = _readwritecontext.Calendar.ToList();
-            return c;
-        }
-
-        private async Task<CalendarEntry> GetCalenderEntry(Guid id)
-        {
-            var ce = await _readwritecontext.CalendarEntry.Where(a => a.Id == id).FirstOrDefaultAsync();
-            if (ce.Id != null)
-            {
-                var c = await _readwritecontext.Calendar.FirstOrDefaultAsync(a => a.Id == ce.CalendarId);
-                if (c.Id != null)
-                {
-                    ce.SetDefaultImage(this._blobServiceClient, c.ContainerName, c.DefaultReference);
-                }
-                return ce;
-            }
-            return null;
-        }
-
-        private async Task<List<CalendarEntry>> GetCalenderEntryByCalendarId(Guid id)
-        {
-            var c = await _readwritecontext.Calendar.Where(a => a.Id == id).FirstOrDefaultAsync();
-            if (c.Id == null)
-            {
-                return null;
-            }
-            var cel = _readwritecontext.CalendarEntry.Where(a => a.CalendarId == id).ToList();
-            foreach (var ce in cel)
-            {
-                ce.SetDefaultImage(this._blobServiceClient, c.ContainerName, c.DefaultReference);
-            }
-            return cel;
-        }
-
-        private Calendar CreateCalendar(CalendarType _type, int _days, int _month, int _year)
-        {
-            var calendar = new Calendar(_days, _month, _year, _type);
-            _readwritecontext.Add(calendar);
-            _readwritecontext.SaveChanges();
-            return calendar;
-        }
-
-
-        private async Task<List<CalendarEntry>> CreateCalendarEntriesAsync(Guid CalendarId)
-        {
-            var calendar = await _readwritecontext.Calendar.Where(a => a.Id == CalendarId).FirstOrDefaultAsync();
-            var cel = await _readwritecontext.CalendarEntry.Where(a => a.CalendarId == calendar.Id).ToListAsync();
-            if (calendar.Id != null)
-            {
-                if (calendar.DefaultReference == null || calendar.TooEarlyReference == null)
-                {
-                    return null;
                 }
                 else
                 {
-                    for (int i = (cel.Count + 1); i <= calendar.noOfEntries; i++)
-                    {
-                        var nce = new CalendarEntry(i.ToString(), new DateTime(calendar.year, calendar.month, i), 0, calendar.CalendarType, calendar.Id, calendar.ContainerName);
-                        cel.Add(nce);
-                        _readwritecontext.Add(nce);
-                    }
-                    _readwritecontext.SaveChanges();
-                    return cel;
+                    return new BadRequestObjectResult(null);
                 }
+
             }
             else
+            {
+                return new BadRequestObjectResult(null);
+            }
+        }
+
+        #region Private Methods
+
+
+        private CalendarEntry GetCalendarImageByType(Calendar calendar, ImageType imageType, string contentType, bool createnew = false)
+        {
+            try
+            {
+                string query = $"@container = '{calendar.containerName}' AND \"imageType\" = '{imageType}'";
+                var resultSet = _storageServiceClient.FindBlobsByTags(query).FirstOrDefault();
+                if (resultSet != null)
+                {
+                    var blob = _storageServiceClient.GetBlobContainerClient(resultSet.BlobContainerName).GetBlobClient(resultSet.BlobName);
+                    var tags = blob.GetTags().Value;
+                    return new CalendarEntry(tags.Tags);
+                }
+                else if (createnew == true)
+                {
+                    return new CalendarEntry(calendar, imageType, contentType);
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch
             {
                 return null;
             }
         }
 
-        private async Task<CalendarEntry> RevealCalendarEntry(Guid id)
+        private string Default(Calendar c, CalendarEntry ce, int dayno)
         {
-            var ce = await GetCalenderEntry(id);
-            var c = await GetCalendar(ce.CalendarId);
-            if (ce.Id != null)
+            if (ce != null)
             {
-                ce.RevealEntry(_blobServiceClient, c.ContainerName, c.TooEarlyReference, c.MissingReference);
+                {
+                    return GetImageSAS(GetCalendarImageByType(c, ImageType.Default, null, false));
+                }
             }
-            return ce;
+            else
+            {
+                return GetImageSAS(GetCalendarImageByType(c, ImageType.Missing, null, false));
+            }
         }
 
+        private string Reveal(Calendar c, CalendarEntry ce, int dayno)
+        {
+            if (ce != null)
+            {
+                if (ce.allowedDate <= DateTime.Now)
+                {
+                    return GetImageSAS(ce);
+                }
+                else
+                {
+                    return GetImageSAS(GetCalendarImageByType(c, ImageType.TooEarly, null, false));
+                }
+            }
+            else
+            {
+                return GetImageSAS(GetCalendarImageByType(c, ImageType.Missing, null, false));
+            }
+
+        }
+
+        private string GetImageSAS(CalendarEntry ce)
+        {
+            var _blobContainerClient = _storageServiceClient.GetBlobContainerClient(ce.containerName);
+            return _blobContainerClient.GetBlobClient(ce.fileReference).GenerateSasUri(Azure.Storage.Sas.BlobSasPermissions.Read, DateTimeOffset.Now.AddMinutes(1)).AbsoluteUri.ToString();
+        }
+
+        private CalendarEntry GetCalendarEntryByDayTag(Calendar calendar, string containerName, int dayNo, string contentType, bool createnew = false)
+        {
+            try
+            {
+                string query = $"@container = '{containerName}' AND \"day\" = '{dayNo.ToString()}' AND \"imageType\" = 'None'";
+                var resultSet = _storageServiceClient.FindBlobsByTags(query).FirstOrDefault();
+                if (resultSet != null)
+                {
+                    var blob = _storageServiceClient.GetBlobContainerClient(resultSet.BlobContainerName).GetBlobClient(resultSet.BlobName);
+                    var tags = blob.GetTags().Value;
+                    return new CalendarEntry(tags.Tags);
+                }
+                else if (createnew == true)
+                {
+                    return new CalendarEntry(calendar, dayNo, contentType);
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        private Calendar AddCalendar(string noOfEntries, string month, string year, string type)
+        {
+            Calendar c = new Calendar(int.Parse(noOfEntries), int.Parse(month), int.Parse(year), (CalendarType)Enum.Parse(typeof(CalendarType), type), null, null, null, Guid.NewGuid());
+            IDictionary<string, string> metadata = c.GetMetaData();
+            this._storageServiceClient.CreateBlobContainer(c.containerName.ToString(), Azure.Storage.Blobs.Models.PublicAccessType.None, metadata, default);
+            return GetCalendarById(c.id);
+        }
+
+
+        private Calendar GetCalendarById(Guid Id)
+        {
+
+            try
+            {
+                var r = new List<Calendar>();
+                var result = _storageServiceClient.GetBlobContainers(Azure.Storage.Blobs.Models.BlobContainerTraits.Metadata, Id.ToString(), default).FirstOrDefault();
+                if (result != null)
+                {
+                    return new Calendar(result.Properties.Metadata);
+                }
+                else
+                {
+                    return null;
+                }
+
+
+            }
+            catch (RequestFailedException e)
+            {
+                Console.WriteLine(e.Message);
+                Console.ReadLine();
+                throw;
+            }
+
+        }
+
+        private CalendarEntry GetPlaceHolderImageByName(Calendar c, string name)
+        {
+            try
+            {
+                var _containerClient = _storageServiceClient.GetBlobContainerClient(c.containerName);
+                var _blobClient = _containerClient.GetBlobClient(name);
+
+                if (_blobClient.Exists())
+                {
+                    return new CalendarEntry(_blobClient.GetTags().Value.Tags);
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        private List<Calendar> GetCalendars()
+        {
+            try
+            {
+                var cl = new List<Calendar>();
+                var result = _storageServiceClient.GetBlobContainers(BlobContainerTraits.Metadata, null, default).ToList();
+
+                foreach (var r in result)
+                {
+                    cl.Add(new Calendar(r.Properties.Metadata));
+                }
+                return cl;
+
+            }
+            catch (RequestFailedException e)
+            {
+                Console.WriteLine(e.Message);
+
+                throw;
+            }
+        }
+
+
+        private List<CalendarEntry> GetCalendarEntriesByCalendarId(Calendar c, ImageType imageType)
+        {
+            List<CalendarEntry> cel = new List<CalendarEntry>();
+            try
+            {
+                string query = $"@container = '{c.containerName}' AND \"imageType\" = '{imageType.ToString()}'";
+                var resultSet = _storageServiceClient.FindBlobsByTags(query).ToList();
+                if (resultSet != null)
+                {
+                    foreach (var r in resultSet)
+                    {
+                        var blob = _storageServiceClient.GetBlobContainerClient(r.BlobContainerName).GetBlobClient(r.BlobName);
+                        var tags = blob.GetTags().Value;
+                        cel.Add(new CalendarEntry(tags.Tags));
+                    }
+                    return cel;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+
+
+        private void UploadImage(CalendarEntry ce, Stream resizeStream)
+        {
+            try
+            {
+                BlobContainerClient _blobContainerClient = this._storageServiceClient.GetBlobContainerClient(ce.containerName);
+                resizeStream.Position = 0;
+                BlobClient _blobClient = _blobContainerClient.GetBlobClient(ce.fileReference);
+                _blobClient.Upload(resizeStream, true);
+                IDictionary<string, string> meta = ce.GetMetadata();
+                _blobClient.SetTags(meta);
+            }
+            catch
+            {
+
+            }        
+        }
+
+        private Calendar UpdateImageReference(Calendar c, ImageType it, string imageReference)
+        {
+            switch (it)
+            {
+                case ImageType.TooEarly:
+                    c.tooEarlyReference = imageReference;
+                    break;
+                case ImageType.Default:
+                    c.defaultReference = imageReference;
+                    break;
+                case ImageType.Missing:
+                    c.missingReference = imageReference;
+                    break;
+            }
+
+            return UpdateCalendarTags(c);
+        }
+
+        private Calendar UpdateCalendarTags(Calendar c)
+        {
+            var _containerClient = _storageServiceClient.GetBlobContainerClient(c.containerName);
+            _containerClient.SetMetadata(c.GetMetaData(), null, default);
+
+            return new Calendar(_containerClient.GetProperties().Value.Metadata);
+
+
+
+        }
+
+        #endregion
     }
+
 }
