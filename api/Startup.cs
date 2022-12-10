@@ -22,9 +22,9 @@ namespace api
             .AddEnvironmentVariables()
             .Build();
             
-            StorageSharedKeyCredential credential = new StorageSharedKeyCredential(config.GetValue<string>("Values:PrivateStorageAccountName"), config.GetValue<string>("Values:PrivateStorageKey"));
+            StorageSharedKeyCredential credential = new StorageSharedKeyCredential(Environment.GetEnvironmentVariable("PrivateStorageAccountName"), Environment.GetEnvironmentVariable("PrivateStorageKey"));
             builder.Services.AddAzureClients(builder => {
-                builder.AddBlobServiceClient(new Uri(String.Format(config.GetValue<string>("Values:PrivateStorageServiceUri"), config.GetValue<string>("Values:PrivateStorageAccountName"))),credential);
+                builder.AddBlobServiceClient(new Uri(String.Format(Environment.GetEnvironmentVariable("PrivateStorageServiceUri"), Environment.GetEnvironmentVariable("PrivateStorageAccountName"))),credential);
                 builder.UseCredential(new DefaultAzureCredential(includeInteractiveCredentials: true));
             });
         }
