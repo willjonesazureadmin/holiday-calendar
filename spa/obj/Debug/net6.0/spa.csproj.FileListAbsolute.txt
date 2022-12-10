@@ -818,3 +818,4 @@ C:\Users\will.jones\repos\holiday-calendar\spa\obj\Debug\net6.0\spa.dll
 C:\Users\will.jones\repos\holiday-calendar\spa\obj\Debug\net6.0\refint\spa.dll
 C:\Users\will.jones\repos\holiday-calendar\spa\obj\Debug\net6.0\spa.pdb
 C:\Users\will.jones\repos\holiday-calendar\spa\obj\Debug\net6.0\ref\spa.dll
+C:\Users\will.jones\repos\holiday-calendar\spa\bin\Debug\net6.0\swa-cli.config.json

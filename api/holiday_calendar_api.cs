@@ -146,7 +146,7 @@ namespace api
             await req.Body.CopyToAsync(uploadStream);
 
 
-            if (contentType == "image/jpeg" || contentType == "image/png" || contentType == "image/bmp" || contentType == "image/gif")
+            if (contentType == "image/jpeg" || contentType == "image/png" || contentType == "image/bmp" || contentType == "image/gif" )
             {
 
                 var it = (ImageType)Enum.Parse(typeof(ImageType), imageType);
@@ -164,7 +164,7 @@ namespace api
                             image.Mutate(x => x.Resize(600, 600, KnownResamplers.Lanczos3));
                             image.Save(resizeStream, format);
                         }
-                        UploadImage(ce, resizeStream);
+                        UploadImage(ce, uploadStream);
                         c = UpdateImageReference(c, it, ce.fileReference);
 
                         return new OkObjectResult(ce);
@@ -309,7 +309,7 @@ namespace api
                         image.Mutate(x => x.Resize(480, 480));
                         image.Save(resizeStream, format);
                     }
-                    UploadImage(ce, resizeStream);
+                    UploadImage(ce, uploadStream);
                     return new OkObjectResult(ce);
 
                 }
